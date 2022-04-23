@@ -1,0 +1,71 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+'''
+Created on 2021年5月22日
+@author: yuchao
+'''
+import os
+import zipfile
+import mimetypes
+import smtplib
+from email import encoders
+from email.mime.multipart import MIMEMultipart
+from email.mime.base import MIMEBase
+from email.mime.text import MIMEText
+import  datetime
+import yaml
+
+from common.get_log import get_log
+class send():
+    def make_zip(self,source_dir, output_filename):
+        #打包目录为zip文件
+        zipf  =  zipfile.ZipFile(output_filename,  'w' )
+        pre_len  =  len (os.path.dirname(source_dir))
+        for  parent, dirnames, filenames  in  os.walk(source_dir):
+            for  filename  in  filenames:
+                pathfile  =  os.path.join(parent, filename)
+                arcname  =  pathfile[pre_len:].strip(os.path.sep)      #相对路径
+                zipf.write(pathfile, arcname)
+        zipf.close()
+
+    def send_emial(self):
+        with open(r'D:\noc_api_auto\Email\email_data.yml', mode='r', encoding='utf-8') as f:
+            file_content = f.read()
+            data = yaml.load(file_content, yaml.FullLoader)
+        filepath = r'D:\noc_api_auto\测试报告文件.zip'
+        smtp_server = data['email_qq']['host']#"smtp.qq.com"
+        username = data['email_qq']['user']#"2373551676@qq.com"
+        password = data['email_qq']['pass']#"lkqluoezcvtkeaci"
+        sender = data['email_qq']['user']#'2373551676@qq.com'
+        # 添加其他邮箱  用逗号分隔
+        #receivers=data['email_qq']['receivers']  #
+        receivers = '3207707507@qq.com','2373551676@qq.com','1475083550@qq.com'#,'chao.yu@hyku.com'
+        time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        msg = MIMEMultipart()
+        # 邮件正文
+        msg.attach(MIMEText("请先下载附件之后,解开压缩包,使用pycharm打开里面的index.html文件。{}".format(time),'plain','utf-8'))
+        msg['From'] = username  # 发件人
+        msg['To'] = ";".join(receivers)   # 收件人
+        subject = data['email_qq']['subject'] # 邮件主题
+        msg['Subject'] = subject
+        data = open(filepath, 'rb')
+        ctype, encoding = mimetypes.guess_type(filepath)
+        if ctype is None or encoding is not None:
+            ctype = 'application/octet-stream'
+        maintype, subtype = ctype.split('/', 1)
+        file_msg = MIMEBase(maintype, subtype)
+        file_msg.set_payload(data.read())
+        data.close()
+        encoders.encode_base64(file_msg)  # 把附件编码
+        file_msg.add_header('Content-Disposition', 'attachment', filename="测试报告.zip")  # 修改邮件头
+        msg.attach(file_msg)
+        try:
+            server = smtplib.SMTP(smtp_server,25)
+            server.login(username,password)
+            server.sendmail(sender,receivers,msg.as_string())
+            server.quit()
+            get_log().info("测试报告邮件发送成功")
+        except Exception as err:
+            get_log().info("测试报告邮件发送失败")
+
+

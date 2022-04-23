@@ -1,0 +1,41 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#Created on 2021年4月23日
+#@author: yuchao
+
+
+- name: 测试用例1：传入实时时间，正确cookie值，能获取设备总数量
+  request:
+    method: get
+    url: https://noc-test.merckuwifi.com/api/statistics/routers/count
+    data:
+      t:
+  header:
+  assert:
+     T:
+       HTTP 401
+     F: total
+
+- name: 测试用例2：传入任意时间，正确cookie值能，获取设备总数量
+  request:
+    method: get
+    url: https://noc-test.merckuwifi.com/api/statistics/routers/count
+    data:
+      t: 165454
+  header:
+  assert:
+     T:
+      Unauthorized
+     F: total
+
+- name: 测试用例3：传入正确时间，错误cookie值，不能获取设备总数量
+  request:
+    method: get
+    url: https://noc-test.merckuwifi.com/api/statistics/routers/count
+    data:
+      t:
+  header: sdfsf454
+  assert:
+     T:
+      'HTTP 401: Unauthorized'
+     F: total
