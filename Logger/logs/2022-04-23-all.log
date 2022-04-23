@@ -1,73 +1,73 @@
-2022-04-23 12:51:47 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
-2022-04-23 12:51:52 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例1：使用正确的用户名和密码能登录成功】
-2022-04-23 12:51:52 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
-2022-04-23 12:51:52 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
-2022-04-23 12:51:52 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': 'yuchao', 'password': 12345678}
-2022-04-23 12:51:52 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'id': 'NgrpB7iW5bNqFuw3vZRG3p', 'username': 'yuchao', 'role': {'id': 'eq6bDnMTZmyPPQ6hsawghX', 'name': 'root', 'created_time': 1614051457000, 'permissions': ['alert.edit', 'alert.read', 'alert_report.edit', 'alert_report.read', 'alert_rule.edit', 'alert_rule.read', 'batch.mesh.upgrade', 'enduser.add', 'enduser.delete', 'enduser.edit', 'enduser.export', 'enduser.import', 'enduser.read', 'enduser.state.edit', 'mesh.batch', 'mesh.delete', 'mesh.detail.read', 'mesh.read', 'mesh.state.edit', 'mesh.task.add', 'role.add', 'role.delete', 'role.edit', 'role.read', 'syslog.read', 'user.add', 'user.delete', 'user.edit', 'user.freeze', 'user.read', 'user.unfreeze']}, 'freezed': False, 'created_time': 1627869194000, 'settings': {'timezone_offset': '-04:00'}}
-2022-04-23 12:51:52 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：200
-2022-04-23 12:51:52 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'id': 'eq6bDnMTZmyPPQ6hsawghX'}
-2022-04-23 12:51:52 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'id': 'eq6bDnMTZmyPPQ6hsawghX', 'name': 'root', 'created_time': 1614051457000, 'permissions': ['alert.edit', 'alert.read', 'alert_report.edit', 'alert_report.read', 'alert_rule.edit', 'alert_rule.read', 'batch.mesh.upgrade', 'enduser.add', 'enduser.delete', 'enduser.edit', 'enduser.export', 'enduser.import', 'enduser.read', 'enduser.state.edit', 'mesh.batch', 'mesh.delete', 'mesh.detail.read', 'mesh.read', 'mesh.state.edit', 'mesh.task.add', 'role.add', 'role.delete', 'role.edit', 'role.read', 'syslog.read', 'user.add', 'user.delete', 'user.edit', 'user.freeze', 'user.read', 'user.unfreeze']}
-2022-04-23 12:51:52 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
-2022-04-23 12:51:52 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
-2022-04-23 12:51:53 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例2：使用错误的用户名不能登录成功】
-2022-04-23 12:51:53 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
-2022-04-23 12:51:53 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
-2022-04-23 12:51:53 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': 'yudsadc', 'password': 12345678}
-2022-04-23 12:51:53 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'error': {'code': 200101, 'message': ['Incorrect username or password']}}
-2022-04-23 12:51:53 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：400
-2022-04-23 12:51:53 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'message': ['Incorrect username or password']}
-2022-04-23 12:51:53 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'code': 200101, 'message': ['Incorrect username or password']}
-2022-04-23 12:51:53 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
-2022-04-23 12:51:53 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
-2022-04-23 12:51:54 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例3：使用错误的密码不能登录成功】
-2022-04-23 12:51:54 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
-2022-04-23 12:51:54 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
-2022-04-23 12:51:54 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': 'yuchao', 'password': 12345678922}
-2022-04-23 12:51:54 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'error': {'code': 200101, 'message': ['Incorrect username or password']}}
-2022-04-23 12:51:54 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：400
-2022-04-23 12:51:54 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'message': ['Incorrect username or password']}
-2022-04-23 12:51:54 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'code': 200101, 'message': ['Incorrect username or password']}
-2022-04-23 12:51:54 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
-2022-04-23 12:51:54 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
-2022-04-23 12:51:55 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例4：不填写用户名和密码不能登录成功】
-2022-04-23 12:51:55 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
-2022-04-23 12:51:55 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
-2022-04-23 12:51:55 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': None, 'password': None}
-2022-04-23 12:51:55 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'error': {'code': 100201, 'message': ["'username' is a required property"]}}
-2022-04-23 12:51:55 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：400
-2022-04-23 12:51:55 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'message': ["'username' is a required property"]}
-2022-04-23 12:51:55 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'code': 100201, 'message': ["'username' is a required property"]}
-2022-04-23 12:51:55 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
-2022-04-23 12:51:56 - get_log.py - [line:133] - INFO - [日志信息]: 设备数量统计模块
-2022-04-23 12:52:00 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例1：传入实时时间，正确cookie值，能获取设备总数量】
-2022-04-23 12:52:00 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/statistics/routers/count
-2022-04-23 12:52:00 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
-2022-04-23 12:52:00 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1650689516'}
-2022-04-23 12:52:00 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'total': {'current': 350, 'previous': 350}, 'online': {'current': 150, 'previous': 150}, 'offline': {'current': 200, 'previous': 200}}
-2022-04-23 12:52:00 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：200
-2022-04-23 12:52:00 - get_log.py - [line:133] - INFO - [日志信息]: cookie值为 8N43R4#NgrpB7iW5bNqFuw3vZRG3p
-2022-04-23 12:52:00 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 total
-2022-04-23 12:52:00 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'total': {'current': 350, 'previous': 350}, 'online': {'current': 150, 'previous': 150}, 'offline': {'current': 200, 'previous': 200}}
-2022-04-23 12:52:00 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
-2022-04-23 12:52:00 - get_log.py - [line:133] - INFO - [日志信息]: 设备数量统计模块
-2022-04-23 12:52:02 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例2：传入任意时间，正确cookie值能，获取设备总数量】
-2022-04-23 12:52:02 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/statistics/routers/count
-2022-04-23 12:52:02 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
-2022-04-23 12:52:02 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': 165454}
-2022-04-23 12:52:02 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'total': {'current': 350, 'previous': 350}, 'online': {'current': 150, 'previous': 150}, 'offline': {'current': 200, 'previous': 200}}
-2022-04-23 12:52:02 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：200
-2022-04-23 12:52:02 - get_log.py - [line:133] - INFO - [日志信息]: cookie值为 8N43R4#NgrpB7iW5bNqFuw3vZRG3p
-2022-04-23 12:52:02 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 total
-2022-04-23 12:52:02 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'total': {'current': 350, 'previous': 350}, 'online': {'current': 150, 'previous': 150}, 'offline': {'current': 200, 'previous': 200}}
-2022-04-23 12:52:02 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
-2022-04-23 12:52:02 - get_log.py - [line:133] - INFO - [日志信息]: 设备数量统计模块
-2022-04-23 12:52:03 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例3：传入正确时间，错误cookie值，不能获取设备总数量】
-2022-04-23 12:52:03 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/statistics/routers/count
-2022-04-23 12:52:03 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
-2022-04-23 12:52:03 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1650689522'}
-2022-04-23 12:52:03 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
-2022-04-23 12:52:03 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
-2022-04-23 12:52:03 - get_log.py - [line:133] - INFO - [日志信息]: cookie值为 sdfsf454
-2022-04-23 12:52:03 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 HTTP 401: Unauthorized
-2022-04-23 12:52:03 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 HTTP 401: Unauthorized
-2022-04-23 12:52:03 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-04-23 13:03:15 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
+2022-04-23 13:03:17 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例1：使用正确的用户名和密码能登录成功】
+2022-04-23 13:03:17 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
+2022-04-23 13:03:17 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
+2022-04-23 13:03:17 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': 'yuchao', 'password': 12345678}
+2022-04-23 13:03:17 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'id': 'NgrpB7iW5bNqFuw3vZRG3p', 'username': 'yuchao', 'role': {'id': 'eq6bDnMTZmyPPQ6hsawghX', 'name': 'root', 'created_time': 1614051457000, 'permissions': ['alert.edit', 'alert.read', 'alert_report.edit', 'alert_report.read', 'alert_rule.edit', 'alert_rule.read', 'batch.mesh.upgrade', 'enduser.add', 'enduser.delete', 'enduser.edit', 'enduser.export', 'enduser.import', 'enduser.read', 'enduser.state.edit', 'mesh.batch', 'mesh.delete', 'mesh.detail.read', 'mesh.read', 'mesh.state.edit', 'mesh.task.add', 'role.add', 'role.delete', 'role.edit', 'role.read', 'syslog.read', 'user.add', 'user.delete', 'user.edit', 'user.freeze', 'user.read', 'user.unfreeze']}, 'freezed': False, 'created_time': 1627869194000, 'settings': {'timezone_offset': '-04:00'}}
+2022-04-23 13:03:17 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：200
+2022-04-23 13:03:17 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'id': 'eq6bDnMTZmyPPQ6hsawghX'}
+2022-04-23 13:03:17 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'id': 'eq6bDnMTZmyPPQ6hsawghX', 'name': 'root', 'created_time': 1614051457000, 'permissions': ['alert.edit', 'alert.read', 'alert_report.edit', 'alert_report.read', 'alert_rule.edit', 'alert_rule.read', 'batch.mesh.upgrade', 'enduser.add', 'enduser.delete', 'enduser.edit', 'enduser.export', 'enduser.import', 'enduser.read', 'enduser.state.edit', 'mesh.batch', 'mesh.delete', 'mesh.detail.read', 'mesh.read', 'mesh.state.edit', 'mesh.task.add', 'role.add', 'role.delete', 'role.edit', 'role.read', 'syslog.read', 'user.add', 'user.delete', 'user.edit', 'user.freeze', 'user.read', 'user.unfreeze']}
+2022-04-23 13:03:17 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-04-23 13:03:17 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例2：使用错误的用户名不能登录成功】
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': 'yudsadc', 'password': 12345678}
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'error': {'code': 200101, 'message': ['Incorrect username or password']}}
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：400
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'message': ['Incorrect username or password']}
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'code': 200101, 'message': ['Incorrect username or password']}
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例3：使用错误的密码不能登录成功】
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': 'yuchao', 'password': 12345678922}
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'error': {'code': 200101, 'message': ['Incorrect username or password']}}
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：400
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'message': ['Incorrect username or password']}
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'code': 200101, 'message': ['Incorrect username or password']}
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-04-23 13:03:18 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
+2022-04-23 13:03:19 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例4：不填写用户名和密码不能登录成功】
+2022-04-23 13:03:19 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
+2022-04-23 13:03:19 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
+2022-04-23 13:03:19 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': None, 'password': None}
+2022-04-23 13:03:19 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'error': {'code': 100201, 'message': ["'username' is a required property"]}}
+2022-04-23 13:03:19 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：400
+2022-04-23 13:03:19 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'message': ["'username' is a required property"]}
+2022-04-23 13:03:19 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'code': 100201, 'message': ["'username' is a required property"]}
+2022-04-23 13:03:19 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-04-23 13:03:20 - get_log.py - [line:133] - INFO - [日志信息]: 设备数量统计模块
+2022-04-23 13:03:22 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例1：传入实时时间，正确cookie值，能获取设备总数量】
+2022-04-23 13:03:22 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/statistics/routers/count
+2022-04-23 13:03:22 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-04-23 13:03:22 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1650690200'}
+2022-04-23 13:03:22 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'total': {'current': 350, 'previous': 350}, 'online': {'current': 150, 'previous': 150}, 'offline': {'current': 200, 'previous': 200}}
+2022-04-23 13:03:22 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：200
+2022-04-23 13:03:22 - get_log.py - [line:133] - INFO - [日志信息]: cookie值为 FSLR2O#NgrpB7iW5bNqFuw3vZRG3p
+2022-04-23 13:03:22 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 total
+2022-04-23 13:03:22 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'total': {'current': 350, 'previous': 350}, 'online': {'current': 150, 'previous': 150}, 'offline': {'current': 200, 'previous': 200}}
+2022-04-23 13:03:22 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-04-23 13:03:22 - get_log.py - [line:133] - INFO - [日志信息]: 设备数量统计模块
+2022-04-23 13:03:23 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例2：传入任意时间，正确cookie值能，获取设备总数量】
+2022-04-23 13:03:23 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/statistics/routers/count
+2022-04-23 13:03:23 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-04-23 13:03:23 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': 165454}
+2022-04-23 13:03:23 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'total': {'current': 350, 'previous': 350}, 'online': {'current': 150, 'previous': 150}, 'offline': {'current': 200, 'previous': 200}}
+2022-04-23 13:03:23 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：200
+2022-04-23 13:03:23 - get_log.py - [line:133] - INFO - [日志信息]: cookie值为 FSLR2O#NgrpB7iW5bNqFuw3vZRG3p
+2022-04-23 13:03:23 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 total
+2022-04-23 13:03:23 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'total': {'current': 350, 'previous': 350}, 'online': {'current': 150, 'previous': 150}, 'offline': {'current': 200, 'previous': 200}}
+2022-04-23 13:03:23 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-04-23 13:03:23 - get_log.py - [line:133] - INFO - [日志信息]: 设备数量统计模块
+2022-04-23 13:03:24 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例3：传入正确时间，错误cookie值，不能获取设备总数量】
+2022-04-23 13:03:24 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/statistics/routers/count
+2022-04-23 13:03:24 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-04-23 13:03:24 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1650690203'}
+2022-04-23 13:03:24 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-04-23 13:03:24 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-04-23 13:03:24 - get_log.py - [line:133] - INFO - [日志信息]: cookie值为 sdfsf454
+2022-04-23 13:03:24 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 HTTP 401: Unauthorized
+2022-04-23 13:03:24 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 HTTP 401: Unauthorized
+2022-04-23 13:03:24 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过

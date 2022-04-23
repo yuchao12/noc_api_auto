@@ -1,18 +1,19 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
   "children" : [ {
     "name" : "yccc",
     "children" : [ {
-      "name" : "1100-MainThread",
+      "name" : "15320-MainThread",
       "children" : [ {
-        "name" : "test_login[caseinfo3]",
-        "uid" : "dec803608df934ba",
-        "parentUid" : "511c3bb9cd54a968e864a8771625aa40",
+        "name" : "test_login[caseinfo0]",
+        "uid" : "13daaa844bf85be1",
+        "parentUid" : "412d8ac3b3f5235e2ede79337fe9d2d0",
         "status" : "passed",
         "time" : {
-          "start" : 1650689514490,
-          "stop" : 1650689515549,
-          "duration" : 1059
+          "start" : 1650690195676,
+          "stop" : 1650690197621,
+          "duration" : 1945
         },
         "flaky" : false,
         "newFailed" : false,
@@ -20,16 +21,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'name': '测试用例4：不填写用户名和密码不能登录成功', 'request': {'method': 'post', 'url': 'https://noc-test.merckuwifi.com/api/users/actions/login', 'data': {'username': None, 'password': None}}, 'assert': {'message': [\"'username' is a required property\"]}}" ]
+        "parameters" : [ "{'name': '测试用例1：使用正确的用户名和密码能登录成功', 'request': {'method': 'post', 'url': 'https://noc-test.merckuwifi.com/api/users/actions/login', 'data': {'username': 'yuchao', 'password': 12345678}}, 'assert': {'id': 'eq6bDnMTZmyPPQ6hsawghX'}}" ]
       }, {
         "name" : "test_count[caseinfo2]",
-        "uid" : "4418924bc55aaa98",
-        "parentUid" : "511c3bb9cd54a968e864a8771625aa40",
+        "uid" : "ff3b3c30e0061901",
+        "parentUid" : "412d8ac3b3f5235e2ede79337fe9d2d0",
         "status" : "passed",
         "time" : {
-          "start" : 1650689522038,
-          "stop" : 1650689523138,
-          "duration" : 1100
+          "start" : 1650690203596,
+          "stop" : 1650690204979,
+          "duration" : 1383
         },
         "flaky" : false,
         "newFailed" : false,
@@ -39,48 +40,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'name': '测试用例3：传入正确时间，错误cookie值，不能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count', 'data': {'t': None}}, 'header': 'sdfsf454', 'assert': {'T': 'HTTP 401: Unauthorized', 'F': 'total'}}" ]
       }, {
-        "name" : "test_count[caseinfo0]",
-        "uid" : "9eb7bb40a390321e",
-        "parentUid" : "511c3bb9cd54a968e864a8771625aa40",
-        "status" : "passed",
-        "time" : {
-          "start" : 1650689516976,
-          "stop" : 1650689520153,
-          "duration" : 3177
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'name': '测试用例1：传入实时时间，正确cookie值，能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count', 'data': {'t': None}}, 'header': None, 'assert': {'T': 'HTTP 401', 'F': 'total'}}" ]
-      }, {
-        "name" : "test_login[caseinfo1]",
-        "uid" : "e91618819e1c8d60",
-        "parentUid" : "511c3bb9cd54a968e864a8771625aa40",
-        "status" : "passed",
-        "time" : {
-          "start" : 1650689512727,
-          "stop" : 1650689513037,
-          "duration" : 310
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'name': '测试用例2：使用错误的用户名不能登录成功', 'request': {'method': 'post', 'url': 'https://noc-test.merckuwifi.com/api/users/actions/login', 'data': {'username': 'yudsadc', 'password': 12345678}}, 'assert': {'message': ['Incorrect username or password']}}" ]
-      }, {
         "name" : "test_login[caseinfo2]",
-        "uid" : "ee95313103c0132d",
-        "parentUid" : "511c3bb9cd54a968e864a8771625aa40",
+        "uid" : "6045eb8fc62ca68c",
+        "parentUid" : "412d8ac3b3f5235e2ede79337fe9d2d0",
         "status" : "passed",
         "time" : {
-          "start" : 1650689513045,
-          "stop" : 1650689514482,
-          "duration" : 1437
+          "start" : 1650690198058,
+          "stop" : 1650690198715,
+          "duration" : 657
         },
         "flaky" : false,
         "newFailed" : false,
@@ -90,14 +57,31 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'name': '测试用例3：使用错误的密码不能登录成功', 'request': {'method': 'post', 'url': 'https://noc-test.merckuwifi.com/api/users/actions/login', 'data': {'username': 'yuchao', 'password': 12345678922}}, 'assert': {'message': ['Incorrect username or password']}}" ]
       }, {
-        "name" : "test_count[caseinfo1]",
-        "uid" : "d98965c0552963e0",
-        "parentUid" : "511c3bb9cd54a968e864a8771625aa40",
+        "name" : "test_login[caseinfo1]",
+        "uid" : "9d956ea7f4026222",
+        "parentUid" : "412d8ac3b3f5235e2ede79337fe9d2d0",
         "status" : "passed",
         "time" : {
-          "start" : 1650689520157,
-          "stop" : 1650689522034,
-          "duration" : 1877
+          "start" : 1650690197625,
+          "stop" : 1650690198055,
+          "duration" : 430
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '测试用例2：使用错误的用户名不能登录成功', 'request': {'method': 'post', 'url': 'https://noc-test.merckuwifi.com/api/users/actions/login', 'data': {'username': 'yudsadc', 'password': 12345678}}, 'assert': {'message': ['Incorrect username or password']}}" ]
+      }, {
+        "name" : "test_count[caseinfo1]",
+        "uid" : "8ff05230f9ae878a",
+        "parentUid" : "412d8ac3b3f5235e2ede79337fe9d2d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650690202275,
+          "stop" : 1650690203592,
+          "duration" : 1317
         },
         "flaky" : false,
         "newFailed" : false,
@@ -107,14 +91,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'name': '测试用例2：传入任意时间，正确cookie值能，获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count', 'data': {'t': 165454}}, 'header': None, 'assert': {'T': 'Unauthorized', 'F': 'total'}}" ]
       }, {
-        "name" : "test_login[caseinfo0]",
-        "uid" : "f61d95fe9a41d9de",
-        "parentUid" : "511c3bb9cd54a968e864a8771625aa40",
+        "name" : "test_count[caseinfo0]",
+        "uid" : "3899d762275932dc",
+        "parentUid" : "412d8ac3b3f5235e2ede79337fe9d2d0",
         "status" : "passed",
         "time" : {
-          "start" : 1650689507515,
-          "stop" : 1650689512720,
-          "duration" : 5205
+          "start" : 1650690200948,
+          "stop" : 1650690202272,
+          "duration" : 1324
         },
         "flaky" : false,
         "newFailed" : false,
@@ -122,11 +106,27 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'name': '测试用例1：使用正确的用户名和密码能登录成功', 'request': {'method': 'post', 'url': 'https://noc-test.merckuwifi.com/api/users/actions/login', 'data': {'username': 'yuchao', 'password': 12345678}}, 'assert': {'id': 'eq6bDnMTZmyPPQ6hsawghX'}}" ]
+        "parameters" : [ "{'name': '测试用例1：传入实时时间，正确cookie值，能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count', 'data': {'t': None}}, 'header': None, 'assert': {'T': 'HTTP 401', 'F': 'total'}}" ]
+      }, {
+        "name" : "test_login[caseinfo3]",
+        "uid" : "2abef7015dc0e15e",
+        "parentUid" : "412d8ac3b3f5235e2ede79337fe9d2d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650690198718,
+          "stop" : 1650690199198,
+          "duration" : 480
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '测试用例4：不填写用户名和密码不能登录成功', 'request': {'method': 'post', 'url': 'https://noc-test.merckuwifi.com/api/users/actions/login', 'data': {'username': None, 'password': None}}, 'assert': {'message': [\"'username' is a required property\"]}}" ]
       } ],
-      "uid" : "511c3bb9cd54a968e864a8771625aa40"
+      "uid" : "412d8ac3b3f5235e2ede79337fe9d2d0"
     } ],
     "uid" : "ea5a3b23330eb15d388d8d3dba19be3a"
-  } ],
-  "name" : "timeline"
+  } ]
 }
