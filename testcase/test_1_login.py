@@ -39,7 +39,6 @@ class Test_login():
         ConsoleFmt().all_console_fmt(name=name,url=url,
         method=method, data=data, response=rep.json(),status_code=status_code)
         ResponseAssert().assert_in(expect,actual)
-        print(154545)
 
 
 
