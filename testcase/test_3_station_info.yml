@@ -66,4 +66,20 @@
      T:
        HTTP 401
      F:
-        state: active
+       state: active
+
+- name: 测试用例5：不传入设备sn号，正确的参数值mode,wifi,wan,enduser,status,state 不能获取设备总数量
+  request:
+    method: get
+    url: https://noc-test.merckuwifi.com/api/meshes
+    station:
+    fields:
+      mode,wifi,wan,enduser,status,state
+    data:
+      t:
+  header:
+  assert:
+     T:
+       HTTP 401
+     F:
+        code: 100201
