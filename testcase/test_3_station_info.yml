@@ -1,0 +1,18 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#Created on 2021年5月23日
+#@author: yuchao
+
+- name: 测试用例1：传入实时时间，正确cookie值，能获取设备总数量
+  request:
+    method: get
+    url: "https://noc-test.merckuwifi.com/api/meshes/
+    station: 080052203000120
+    data:
+      t: 1650783564937
+      fields: mode,wifi,wan,enduser,status,state
+  header:
+  assert:
+     T:
+       HTTP 401
+     F: total
