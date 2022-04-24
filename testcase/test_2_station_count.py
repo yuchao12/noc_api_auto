@@ -39,11 +39,9 @@ class Test_station_count():
         else:
             actual = rep.json()
             expect = caseinfo['assert']['F']
-        ConsoleFmt().all_console_fmt(name=name,url=url,
+        ConsoleFmt().all_console_fmt(name=name,url=url,cookie=header,
         method=method, data=data, response=rep.json(),status_code=status_code)
-        get_log().info('cookie值为 {}'.format(caseinfo['header']))
         ResponseAssert().assert_in(expect,actual)
-
 
 
 

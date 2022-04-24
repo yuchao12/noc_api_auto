@@ -23,27 +23,26 @@ class Test_station_info():
     def test_station_info(self,caseinfo):
         get_log().info('查询设备详细信息模块')
         name=caseinfo['name']
-        print(name)
-        # method = caseinfo['request']['method']
-        # url = str(caseinfo['request']['url'])+str(caseinfo['request']['station'])
-        # print(url)
-        # if caseinfo['header'] is None:
-        #     caseinfo['header'] = yamlUtil().read_extract_yml('cookies')
-        # header={'cookie': '_cookie='+caseinfo['header']}
-        # if caseinfo['request']['data']['t'] is None:
-        #     caseinfo['request']['data']['t'] = str(int(time.time()))
-        # data = caseinfo['request']['data']
-        # rep = RequestsUtil().send_request(method,url,data,headers=header)
-        # status_code=rep.status_code
-        # print(rep.json())
-        # if 'Unauthorized' in str(rep.json()):
-        #     actual = rep.json()['detail']
-        #     expect = caseinfo['assert']['T']
-        # else:
-        #     actual = rep.json()
-        #     expect = caseinfo['assert']['F']
-        # ConsoleFmt().all_console_fmt(name=name,url=url,
-        # method=method, data=data, response=rep.json(),status_code=status_code)
-        # get_log().info('cookie值为 {}'.format(caseinfo['header']))
-        # ResponseAssert().assert_in(expect,actual)
+        method = caseinfo['request']['method']
+        if caseinfo['request']['station'] is None:
+            url = caseinfo['request']['url']+'?fields='+caseinfo['request']['fields']
+        else:
+            url = caseinfo['request']['url']+caseinfo['request']['station']+'?fields='+caseinfo['request']['fields']
+        if caseinfo['header'] is None:
+            caseinfo['header'] = yamlUtil().read_extract_yml('cookies')
+        header = {'cookie': '_cookie=' + caseinfo['header']}
+        if caseinfo['request']['data']['t'] is None:
+             caseinfo['request']['data']['t'] = str(int(time.time()))
+        data = caseinfo['request']['data']
+        rep = RequestsUtil().send_request(method,url,data,headers=header)
+        status_code=rep.status_code
+        if 'Unauthorized' in str(rep.json()):
+            actual = rep.json()['detail']
+            expect = caseinfo['assert']['T']
+        else:
+            actual = rep.json()
+            expect = caseinfo['assert']['F']
+        ConsoleFmt().all_console_fmt(name=name,url=url,method=method, data=data,
+        data2=caseinfo['request']['fields'],response=rep.json(),status_code=status_code,cookie=header)
+        ResponseAssert().assert_in(expect,actual)
 
