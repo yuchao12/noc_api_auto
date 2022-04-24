@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #Created on 2021年5月23日
-#@author: yuchao
+#@author: yuchao1
 
 
 - name: 测试用例1：传入实时时间，正确cookie值，能获取设备总数量

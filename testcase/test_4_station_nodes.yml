@@ -1,0 +1,46 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#Created on 2021年5月23日
+#@author: yuchao
+
+- name: 测试用例1:上传正确设备sn号，正确cookie值,能获取接入设备信息
+  request:
+    method: get
+    url: https://noc-test.merckuwifi.com/api/meshes/
+    station: 080052203000111
+    data:
+      t:
+  header:
+  assert:
+    T:
+      sn
+    F:
+      code: 300218
+
+- name: 测试用例2:不传设备sn号，正确cookie值,不能获取接入设备信息
+  request:
+    method: get
+    url: https://noc-test.merckuwifi.com/api/meshes/
+    station:
+    data:
+      t:
+  header:
+  assert:
+     T:
+       sn
+     F:
+        code: 300218
+
+- name: 测试用例3:上传正确设备sn号，错误cookie值,不能获取接入设备信息
+  request:
+    method: get
+    url: https://noc-test.merckuwifi.com/api/meshes/
+    station: 080052203000111
+    data:
+      t:
+  header: dfsdfds44454
+  assert:
+    T:
+      sn
+    F:
+      Unauthorized
