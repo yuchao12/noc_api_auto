@@ -19,8 +19,8 @@ from common.yaml_util import yamlUtil
 @pytest.mark.run(order=2)
 @pytest.mark.usefixtures('login')
 @pytest.mark.parametrize('caseinfo',yamlUtil().read_testcase_yml('test_2_station_count.yml'))
-class Test_count():
-    def test_count(self,caseinfo):
+class Test_station_count():
+    def test_station_count(self,caseinfo):
         get_log().info('设备数量统计模块')
         name=caseinfo['name']
         method = caseinfo['request']['method']

@@ -13,7 +13,6 @@ from common.get_log import get_log
 from common.send_request import RequestsUtil
 from common.yaml_util import yamlUtil
 
-
 @allure.feature('登录模块')
 @pytest.mark.login
 @pytest.mark.run(order=1)
