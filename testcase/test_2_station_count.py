@@ -42,7 +42,6 @@ class Test_station_count():
         ConsoleFmt().all_console_fmt(name=name,url=url,cookie=header,
         method=method, data=data, response=rep.json(),status_code=status_code)
         ResponseAssert().assert_in(expect,actual)
-        print(11)
 
 
 

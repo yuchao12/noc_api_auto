@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #Created on 2021年5月23日
-#@author: yuchao11
+#@author: yuchao
 
 
 - name: 测试用例1：使用正确的用户名和密码能登录成功
