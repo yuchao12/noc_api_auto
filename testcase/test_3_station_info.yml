@@ -15,10 +15,8 @@
       t:
   header:
   assert:
-     T:
-       HTTP 401
-     F:
-        state: active
+    wan
+
 
 - name: 测试用例2：传入实时时间，设备sn号，错误cookie值,正确的参数值mode,wifi,wan,enduser,status,state 不能获取设备总数量
   request:
@@ -31,10 +29,7 @@
       t:
   header: dfsd5656fsd5634
   assert:
-     T:
-       HTTP 401
-     F:
-        state: active
+    HTTP 401
 
 - name: 测试用例3：传入实时时间，设备sn号，正确cookie值,不传参数值state,不能获取设备总数量
   request:
@@ -45,12 +40,10 @@
       mode,wifi,wan,enduser,status
     data:
       t:
-  header: dfsd5656fsd5634
+  header:
   assert:
-     T:
-       HTTP 401
-     F:
-        state: active
+       status
+
 
 - name: 测试用例4：传入设备sn号，正确的cookie，不传参数status 不能获取设备总数量
   request:
@@ -61,12 +54,9 @@
       mode,wifi,wan,enduser,state
     data:
       t:
-  header: dfsd5656fsd5634
+  header:
   assert:
-     T:
-       HTTP 401
-     F:
-       state: active
+       state
 
 - name: 测试用例5：不传入设备sn号，正确的参数值mode,wifi,wan,enduser,status,state 不能获取设备总数量
   request:
@@ -79,7 +69,4 @@
       t:
   header:
   assert:
-     T:
-       HTTP 401
-     F:
-        code: 100201
+       code: 100201

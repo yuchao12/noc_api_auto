@@ -16,7 +16,7 @@ from common.yaml_util import yamlUtil
 
 @allure.feature('设备数量统计模块')
 @pytest.mark.count
-@pytest.mark.run(order=2)
+#@pytest.mark.run(order=5)
 @pytest.mark.parametrize('caseinfo',yamlUtil().read_testcase_yml('test_2_station_count.yml'))
 class Test_station_count():
     def test_station_count(self,caseinfo):
@@ -32,12 +32,8 @@ class Test_station_count():
         data = caseinfo['request']['data']
         rep = RequestsUtil().send_request(method,url,data,headers=header)
         status_code=rep.status_code
-        if 'Unauthorized' in str(rep.json()):
-            actual = rep.json()['detail']
-            expect = caseinfo['assert']['T']
-        else:
-            actual = rep.json()
-            expect = caseinfo['assert']['F']
+        expect = caseinfo['assert']
+        actual = rep.json()
         ConsoleFmt().all_console_fmt(name=name,url=url,cookie=header,
         method=method, data=data, response=rep.json(),status_code=status_code)
         ResponseAssert().assert_in(expect,actual)

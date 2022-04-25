@@ -14,15 +14,15 @@ from common.get_log import get_log
 from common.send_request import RequestsUtil
 from common.yaml_util import yamlUtil
 
-@allure.feature('查询设备详细信息模块')
+@allure.feature('用户信息模块')
 @pytest.mark.user_info
-@pytest.mark.run(order=6)
+@pytest.mark.run(order=1)
 @pytest.mark.usefixtures('get_userid')
 @pytest.mark.parametrize('caseinfo',yamlUtil().read_testcase_yml('test_6_user_info.yml'))
 class Test_station_info():
     def test_station_info(self,caseinfo):
         time.sleep(2)
-        get_log().info('查询设备详细信息模块')
+        get_log().info('用户信息模块')
         name=caseinfo['name']
         method = caseinfo['request']['method']
         if caseinfo['request']['userid'] is None:
@@ -36,14 +36,13 @@ class Test_station_info():
         data = caseinfo['request']['data']
         rep = RequestsUtil().send_request(method,url,data,headers=header)
         status_code=rep.status_code
-        if 'name' in str(rep.json()):
-            actual = rep.json()
-            if caseinfo['assert']['T']['id'] is None:
-                caseinfo['assert']['T']['id']= yamlUtil().read_extract_yml('user_id1')
-            expect = caseinfo['assert']['T']
-        else:
-            actual = rep.json()
-            expect = caseinfo['assert']['F']
+        try:
+            if caseinfo['assert']['id'] is None:
+                caseinfo['assert']['id'] = yamlUtil().read_extract_yml('user_id1')
+        except:
+            pass
+        actual = rep.json()
+        expect = caseinfo['assert']
         ConsoleFmt().all_console_fmt(name=name,url=url,method=method, data=data,
         response=rep.json(),status_code=status_code,cookie=header)
         ResponseAssert().assert_in(expect,actual)

@@ -1,0 +1,138 @@
+{
+  "uid" : "3ad45cccf2329a80",
+  "name" : "test_station_count[caseinfo0]",
+  "fullName" : "testcase.test_2_station_count.Test_station_count#test_station_count",
+  "historyId" : "2b9d7073c27592c8d2b387559eca9aba",
+  "time" : {
+    "start" : 1650875518573,
+    "stop" : 1650875519659,
+    "duration" : 1086
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <test_2_station_count.Test_station_count object at 0x000001C94E40B198>\ncaseinfo = {'assert': 'total', 'header': 'CM3NNH#NgrpB7iW5bNqFuw3vZRG3p', 'name': '测试用例1：传入实时时间，正确cookie值，能获取设备总数量', 'request': {'data': {'t': '1650875518'}, 'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count'}}\n\n    def test_station_count(self,caseinfo):\n        get_log().info('设备数量统计模块')\n        name=caseinfo['name']\n        method = caseinfo['request']['method']\n        url = caseinfo['request']['url']\n        if caseinfo['header'] is None:\n            caseinfo['header'] = yamlUtil().read_extract_yml('cookies')\n        header={'cookie': '_cookie='+caseinfo['header']}\n        if caseinfo['request']['data']['t'] is None:\n            caseinfo['request']['data']['t'] = str(int(time.time()))\n        data = caseinfo['request']['data']\n        rep = RequestsUtil().send_request(method,url,data,headers=header)\n        status_code=rep.status_code\n        expect = caseinfo['assert']\n        actual = rep.json()\n        ConsoleFmt().all_console_fmt(name=name,url=url,cookie=header,\n        method=method, data=data, response=rep.json(),status_code=status_code)\n>       ResponseAssert().assert_in(expect,actual)\n\ntestcase\\test_2_station_count.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <common.assert_case.ResponseAssert object at 0x000001C94E434B70>\nexcepct = 'total', actual = {'detail': 'HTTP 401: Unauthorized'}\n\n    def assert_in(self,excepct,actual):\n        if '{' in str(excepct):\n            if  (str(excepct).split('{')[1].split('}')[0]) in str(actual):\n                get_log().info(f\"断言检查点：预期响应结果 {excepct}\")\n                get_log().info(f\"断言检查点：实际结果响应结果 {actual}\")\n                get_log().info(\"测试结果：预期结果包含在实际结果内，测试用例通过\")\n                assert True\n            else:\n                get_log().error(f\"断言检查点：预期响应结果 {excepct}\")\n                get_log().error(f\"断言检查点：实际结果响应结果 {actual}\")\n                get_log().error(\"测试结果：实际结果不包含在预期结果内，测试用例失败\")\n                assert False\n        else:\n            if str(excepct) in str(actual):\n                get_log().info(f\"断言检查点：预期响应结果 {excepct}\")\n                get_log().info(f\"断言检查点：实际结果响应结果 {actual}\")\n                get_log().info(\"测试结果：预期结果包含在实际结果内，测试用例通过\")\n                assert True\n            else:\n                get_log().error(f\"断言检查点：预期响应结果 {excepct}\")\n                get_log().error(f\"断言检查点：实际结果响应结果 {actual}\")\n                get_log().error(\"测试结果：实际结果不包含在预期结果内，测试用例失败\")\n>               assert False\nE               AssertionError\n\ncommon\\assert_case.py:44: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clean_yaml",
+    "time" : {
+      "start" : 1650875502564,
+      "stop" : 1650875502564,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "delet_log",
+    "time" : {
+      "start" : 1650875502565,
+      "stop" : 1650875502567,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1650875502567,
+      "stop" : 1650875504100,
+      "duration" : 1533
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <test_2_station_count.Test_station_count object at 0x000001C94E40B198>\ncaseinfo = {'assert': 'total', 'header': 'CM3NNH#NgrpB7iW5bNqFuw3vZRG3p', 'name': '测试用例1：传入实时时间，正确cookie值，能获取设备总数量', 'request': {'data': {'t': '1650875518'}, 'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count'}}\n\n    def test_station_count(self,caseinfo):\n        get_log().info('设备数量统计模块')\n        name=caseinfo['name']\n        method = caseinfo['request']['method']\n        url = caseinfo['request']['url']\n        if caseinfo['header'] is None:\n            caseinfo['header'] = yamlUtil().read_extract_yml('cookies')\n        header={'cookie': '_cookie='+caseinfo['header']}\n        if caseinfo['request']['data']['t'] is None:\n            caseinfo['request']['data']['t'] = str(int(time.time()))\n        data = caseinfo['request']['data']\n        rep = RequestsUtil().send_request(method,url,data,headers=header)\n        status_code=rep.status_code\n        expect = caseinfo['assert']\n        actual = rep.json()\n        ConsoleFmt().all_console_fmt(name=name,url=url,cookie=header,\n        method=method, data=data, response=rep.json(),status_code=status_code)\n>       ResponseAssert().assert_in(expect,actual)\n\ntestcase\\test_2_station_count.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <common.assert_case.ResponseAssert object at 0x000001C94E434B70>\nexcepct = 'total', actual = {'detail': 'HTTP 401: Unauthorized'}\n\n    def assert_in(self,excepct,actual):\n        if '{' in str(excepct):\n            if  (str(excepct).split('{')[1].split('}')[0]) in str(actual):\n                get_log().info(f\"断言检查点：预期响应结果 {excepct}\")\n                get_log().info(f\"断言检查点：实际结果响应结果 {actual}\")\n                get_log().info(\"测试结果：预期结果包含在实际结果内，测试用例通过\")\n                assert True\n            else:\n                get_log().error(f\"断言检查点：预期响应结果 {excepct}\")\n                get_log().error(f\"断言检查点：实际结果响应结果 {actual}\")\n                get_log().error(\"测试结果：实际结果不包含在预期结果内，测试用例失败\")\n                assert False\n        else:\n            if str(excepct) in str(actual):\n                get_log().info(f\"断言检查点：预期响应结果 {excepct}\")\n                get_log().info(f\"断言检查点：实际结果响应结果 {actual}\")\n                get_log().info(\"测试结果：预期结果包含在实际结果内，测试用例通过\")\n                assert True\n            else:\n                get_log().error(f\"断言检查点：预期响应结果 {excepct}\")\n                get_log().error(f\"断言检查点：实际结果响应结果 {actual}\")\n                get_log().error(\"测试结果：实际结果不包含在预期结果内，测试用例失败\")\n>               assert False\nE               AssertionError\n\ncommon\\assert_case.py:44: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2fcea829ce5a328",
+      "name" : "log",
+      "source" : "2fcea829ce5a328.txt",
+      "type" : "text/plain",
+      "size" : 926
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "设备数量统计模块"
+  }, {
+    "name" : "tag",
+    "value" : "count"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_2_station_count"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_station_count"
+  }, {
+    "name" : "host",
+    "value" : "yccc"
+  }, {
+    "name" : "thread",
+    "value" : "14604-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_2_station_count"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '测试用例1：传入实时时间，正确cookie值，能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count', 'data': {'t': None}}, 'header': None, 'assert': 'total'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "count" ]
+  },
+  "source" : "3ad45cccf2329a80.json",
+  "parameterValues" : [ "{'name': '测试用例1：传入实时时间，正确cookie值，能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count', 'data': {'t': None}}, 'header': None, 'assert': 'total'}" ]
+}

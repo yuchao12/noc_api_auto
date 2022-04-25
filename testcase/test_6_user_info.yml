@@ -12,10 +12,7 @@
       t:
   header:
   assert:
-    T:
-      id:
-    F:
-      Unauthorized
+      id :
 
 - name: 测试用例2:上传错误id，正确cookie值,不能能获取用户信息
   request:
@@ -26,7 +23,4 @@
       t:
   header:
   assert:
-    T:
-      id:
-    F:
      message: ['Id is invalid']

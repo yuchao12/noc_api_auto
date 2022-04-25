@@ -12,9 +12,7 @@
       t:
   header:
   assert:
-     T:
-       HTTP 401
-     F: total
+      total
 
 - name: 测试用例2：传入任意时间，正确cookie值能，获取设备总数量
   request:
@@ -24,9 +22,8 @@
       t: 165454
   header:
   assert:
-     T:
-      Unauthorized
-     F: total
+      total
+
 
 - name: 测试用例3：传入正确时间，错误cookie值，不能获取设备总数量
   request:
@@ -36,6 +33,4 @@
       t:
   header: sdfsf454
   assert:
-     T:
       'HTTP 401: Unauthorized'
-     F: total

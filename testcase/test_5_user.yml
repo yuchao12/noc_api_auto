@@ -8,27 +8,21 @@
     method: get
     url: https://noc-test.merckuwifi.com/api/endusers
     data:
-      offset:
-      count:
+      offset: 0
+      count: 10
       t:
   header:
   assert:
-    T:
-      sn
-    F:
-      Unauthorized
+      total
 
 - name: 测试用例2:上传正确参数值，错误cookie值,不能能获取所有用户信息
   request:
     method: get
     url: https://noc-test.merckuwifi.com/api/endusers
     data:
-      offset:
-      count:
+      offset: 0
+      count: 10
       t:
   header: dfsdfsd4545454
   assert:
-    T:
-      sn
-    F:
       Unauthorized

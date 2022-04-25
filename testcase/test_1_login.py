@@ -15,7 +15,7 @@ from common.yaml_util import yamlUtil
 
 @allure.feature('登录模块')
 @pytest.mark.login
-@pytest.mark.run(order=1)
+#@pytest.mark.run(order=1)
 @pytest.mark.parametrize('caseinfo', yamlUtil().read_testcase_yml('test_1_login.yml'))
 # 自行选择是否显示用例标题
 # @allure.title(yamlUtil().read_testcase_yml('test_1_login.yml')[0]['name'])
@@ -31,10 +31,7 @@ class Test_login():
         rep = RequestsUtil().send_request(method,url,data)
         status_code=rep.status_code
         expect = caseinfo['assert']
-        if 'error' in rep.json():
-            actual = rep.json()['error'] #可以选择直接使用返回的json做对比
-        else:
-            actual = rep.json()['role']
+        actual = rep.json()
         ConsoleFmt().all_console_fmt(name=name,url=url,
         method=method, data=data, response=rep.json(),status_code=status_code)
         ResponseAssert().assert_in(expect,actual)

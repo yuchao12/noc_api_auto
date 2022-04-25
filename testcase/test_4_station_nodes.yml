@@ -12,10 +12,7 @@
       t:
   header:
   assert:
-    T:
-      sn
-    F:
-      code: 300218
+    sn:
 
 - name: 测试用例2:不传设备sn号，正确cookie值,不能获取接入设备信息
   request:
@@ -26,10 +23,7 @@
       t:
   header:
   assert:
-     T:
-       sn
-     F:
-        code: 300218
+        message: ['Mesh id invalid']
 
 - name: 测试用例3:上传正确设备sn号，错误cookie值,不能获取接入设备信息
   request:
@@ -40,7 +34,4 @@
       t:
   header: dfsdfds44454
   assert:
-    T:
-      sn
-    F:
       Unauthorized

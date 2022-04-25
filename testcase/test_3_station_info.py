@@ -16,7 +16,7 @@ from common.yaml_util import yamlUtil
 
 @allure.feature('查询设备详细信息模块')
 @pytest.mark.station_info
-@pytest.mark.run(order=3)
+#@pytest.mark.run(order=6)
 @pytest.mark.parametrize('caseinfo',yamlUtil().read_testcase_yml('test_3_station_info.yml'))
 class Test_station_info():
     def test_station_info(self,caseinfo):
@@ -35,12 +35,8 @@ class Test_station_info():
         data = caseinfo['request']['data']
         rep = RequestsUtil().send_request(method,url,data,headers=header)
         status_code=rep.status_code
-        if 'Unauthorized' in str(rep.json()):
-            actual = rep.json()['detail']
-            expect = caseinfo['assert']['T']
-        else:
-            actual = rep.json()
-            expect = caseinfo['assert']['F']
+        actual = rep.json()
+        expect = caseinfo['assert']
         ConsoleFmt().all_console_fmt(name=name,url=url,method=method, data=data,
-        data2=caseinfo['request']['fields'],response=rep.json(),status_code=status_code,cookie=header)
+        response=rep.json(),status_code=status_code,cookie=header)
         ResponseAssert().assert_in(expect,actual)
