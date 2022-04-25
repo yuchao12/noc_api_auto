@@ -17,7 +17,6 @@ from common.yaml_util import yamlUtil
 @allure.feature('查询设备详细信息模块')
 @pytest.mark.station_info
 @pytest.mark.run(order=3)
-@pytest.mark.usefixtures('login')
 @pytest.mark.parametrize('caseinfo',yamlUtil().read_testcase_yml('test_3_station_info.yml'))
 class Test_station_info():
     def test_station_info(self,caseinfo):

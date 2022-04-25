@@ -1,0 +1,34 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#Created on 2021年5月24日
+#@author: yuchao
+
+- name: 测试用例1:上传正确参数值，正确cookie值,能获取所有用户信息
+  request:
+    method: get
+    url: https://noc-test.merckuwifi.com/api/endusers
+    data:
+      offset:
+      count:
+      t:
+  header:
+  assert:
+    T:
+      sn
+    F:
+      Unauthorized
+
+- name: 测试用例2:上传正确参数值，错误cookie值,不能能获取所有用户信息
+  request:
+    method: get
+    url: https://noc-test.merckuwifi.com/api/endusers
+    data:
+      offset:
+      count:
+      t:
+  header: dfsdfsd4545454
+  assert:
+    T:
+      sn
+    F:
+      Unauthorized

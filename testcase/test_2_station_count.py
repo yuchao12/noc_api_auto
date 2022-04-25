@@ -17,7 +17,6 @@ from common.yaml_util import yamlUtil
 @allure.feature('设备数量统计模块')
 @pytest.mark.count
 @pytest.mark.run(order=2)
-@pytest.mark.usefixtures('login')
 @pytest.mark.parametrize('caseinfo',yamlUtil().read_testcase_yml('test_2_station_count.yml'))
 class Test_station_count():
     def test_station_count(self,caseinfo):

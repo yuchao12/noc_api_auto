@@ -1,0 +1,32 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#Created on 2021年5月24日
+#@author: yuchao
+
+- name: 测试用例1:上传正确id，正确cookie值,能获取用户信息
+  request:
+    method: get
+    url: https://noc-test.merckuwifi.com/api/endusers/
+    userid:
+    data:
+      t:
+  header:
+  assert:
+    T:
+      id:
+    F:
+      Unauthorized
+
+- name: 测试用例2:上传错误id，正确cookie值,不能能获取用户信息
+  request:
+    method: get
+    url: https://noc-test.merckuwifi.com/api/endusers/
+    userid: ssdsd4545
+    data:
+      t:
+  header:
+  assert:
+    T:
+      id:
+    F:
+     message: ['Id is invalid']

@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 '''
-Created on 2021年5月23日
+Created on 2021年5月24日
 @author: yuchao
 '''
 
@@ -15,19 +15,17 @@ from common.send_request import RequestsUtil
 from common.yaml_util import yamlUtil
 
 @allure.feature('接入设备详情模块')
-@pytest.mark.flaky(reruns=3, reruns_delay=2)
-@pytest.mark.station_nodes
-@pytest.mark.run(order=4)
-@pytest.mark.parametrize('caseinfo',yamlUtil().read_testcase_yml('test_4_station_nodes.yml'))
+#@pytest.mark.skip(reason="由于某种原因这个测试用例暂时不执行")
+@pytest.mark.user_info
+@pytest.mark.run(order=5)
+@pytest.mark.parametrize('caseinfo',yamlUtil().read_testcase_yml('test_5_user.yml'))
 class Test_station_info():
     def test_station_info(self,caseinfo):
+        time.sleep(2)
         get_log().info('接入设备详情模块')
         name=caseinfo['name']
         method = caseinfo['request']['method']
-        if caseinfo['request']['station'] is None:
-            url = caseinfo['request']['url']+'nodes'
-        else:
-            url = caseinfo['request']['url']+caseinfo['request']['station']+'/nodes'
+        url = caseinfo['request']['url']
         if caseinfo['header'] is None:
             caseinfo['header'] = yamlUtil().read_extract_yml('cookies')
         header = {'cookie': '_cookie=' + caseinfo['header']}
@@ -36,7 +34,7 @@ class Test_station_info():
         data = caseinfo['request']['data']
         rep = RequestsUtil().send_request(method,url,data,headers=header)
         status_code=rep.status_code
-        if 'sn' in str(rep.json()):
+        if 'total' in str(rep.json()):
             actual = rep.json()
             expect = caseinfo['assert']['T']
         else:
