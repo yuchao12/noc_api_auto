@@ -1,0 +1,130 @@
+{
+  "uid" : "c00ed7997d6fc5e5",
+  "name" : "test_login[caseinfo3]",
+  "fullName" : "testcase.test_1_login.Test_login#test_login",
+  "historyId" : "035a75d7b354bd494b4e6dcd91562aef",
+  "time" : {
+    "start" : 1654781971212,
+    "stop" : 1654781971780,
+    "duration" : 568
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clean_yaml",
+    "time" : {
+      "start" : 1654781950833,
+      "stop" : 1654781950834,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "delet_log",
+    "time" : {
+      "start" : 1654781950834,
+      "stop" : 1654781950835,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1654781950835,
+      "stop" : 1654781953964,
+      "duration" : 3129
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fb30716fecca75f5",
+      "name" : "log",
+      "source" : "fb30716fecca75f5.txt",
+      "type" : "text/plain",
+      "size" : 986
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录模块"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_1_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login"
+  }, {
+    "name" : "host",
+    "value" : "yccc"
+  }, {
+    "name" : "thread",
+    "value" : "2436-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_1_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '测试用例4：不填写用户名和密码不能登录成功', 'request': {'method': 'post', 'url': 'https://noc-test.merckuwifi.com/api/users/actions/login', 'data': {'username': None, 'password': None}}, 'assert': {'message': [\"'username' is a required property\"]}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "login" ]
+  },
+  "source" : "c00ed7997d6fc5e5.json",
+  "parameterValues" : [ "{'name': '测试用例4：不填写用户名和密码不能登录成功', 'request': {'method': 'post', 'url': 'https://noc-test.merckuwifi.com/api/users/actions/login', 'data': {'username': None, 'password': None}}, 'assert': {'message': [\"'username' is a required property\"]}}" ]
+}

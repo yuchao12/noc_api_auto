@@ -46,5 +46,3 @@ class Test_station_info():
         ConsoleFmt().all_console_fmt(name=name,url=url,method=method, data=data,
         response=rep.json(),status_code=status_code,cookie=header)
         ResponseAssert().assert_in(expect,actual)
-
-

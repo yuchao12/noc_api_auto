@@ -8,8 +8,8 @@
     method: get
     url: https://noc-test.merckuwifi.com/api/endusers
     data:
-      offset: 0
-      count: 10
+      offset:
+      count:
       t:
   header:
   assert:

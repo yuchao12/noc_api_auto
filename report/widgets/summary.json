@@ -1,20 +1,20 @@
 {
-    "reportName": " NOC 接口自动化测试报告",
-    "testRuns": [],
-    "statistic": {
-        "failed": 7,
-        "broken": 0,
-        "skipped": 0,
-        "passed": 12,
-        "unknown": 0,
-        "total": 19
-    },
-    "time": {
-        "start": 1650875506708,
-        "stop": 1650875533275,
-        "duration": 26567,
-        "minDuration": 262,
-        "maxDuration": 3081,
-        "sumDuration": 26387
-    }
+  "reportName" : "Allure Report",
+  "testRuns" : [ ],
+  "statistic" : {
+    "failed" : 7,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 12,
+    "unknown" : 0,
+    "total" : 19
+  },
+  "time" : {
+    "start" : 1654781956340,
+    "stop" : 1654781989214,
+    "duration" : 32874,
+    "minDuration" : 453,
+    "maxDuration" : 3793,
+    "sumDuration" : 32763
+  }
 }

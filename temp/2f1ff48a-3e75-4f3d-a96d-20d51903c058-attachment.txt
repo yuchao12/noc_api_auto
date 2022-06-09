@@ -1,0 +1,11 @@
+INFO     root:get_log.py:133 设备数量统计模块
+INFO     root:get_log.py:133 【开始执行测试用例：测试用例3：传入正确时间，错误cookie值，不能获取设备总数量】
+INFO     root:get_log.py:133 请求url：https://noc-test.merckuwifi.com/api/statistics/routers/count
+INFO     root:get_log.py:133 请求方法：get
+INFO     root:get_log.py:133 请求参数：{'t': '1654781974'}
+INFO     root:get_log.py:133 请求cookie值：{'cookie': '_cookie=sdfsf454'}
+INFO     root:get_log.py:133 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+INFO     root:get_log.py:133 响应状态码：401
+INFO     root:get_log.py:133 断言检查点：预期响应结果 HTTP 401: Unauthorized
+INFO     root:get_log.py:133 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+INFO     root:get_log.py:133 测试结果：预期结果包含在实际结果内，测试用例通过

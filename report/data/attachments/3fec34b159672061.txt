@@ -1,0 +1,11 @@
+INFO     root:get_log.py:133 接入设备详情模块
+INFO     root:get_log.py:133 【开始执行测试用例：测试用例3:上传正确设备sn号，错误cookie值,不能获取接入设备信息】
+INFO     root:get_log.py:133 请求url：https://noc-test.merckuwifi.com/api/meshes/080052203000111/nodes
+INFO     root:get_log.py:133 请求方法：get
+INFO     root:get_log.py:133 请求参数：{'t': '1654781966'}
+INFO     root:get_log.py:133 请求cookie值：{'cookie': '_cookie=dfsdfds44454'}
+INFO     root:get_log.py:133 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+INFO     root:get_log.py:133 响应状态码：401
+INFO     root:get_log.py:133 断言检查点：预期响应结果 Unauthorized
+INFO     root:get_log.py:133 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+INFO     root:get_log.py:133 测试结果：预期结果包含在实际结果内，测试用例通过
