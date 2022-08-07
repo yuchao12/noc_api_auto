@@ -7,13 +7,13 @@
       "name" : "AssertionError",
       "children" : [ {
         "name" : "test_station_count[caseinfo0]",
-        "uid" : "3d20eb848024bda",
+        "uid" : "18c4ced799f4096f",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1659627556151,
-          "stop" : 1659627557307,
-          "duration" : 1156
+          "start" : 1659847416990,
+          "stop" : 1659847418056,
+          "duration" : 1066
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,13 +24,13 @@
         "parameters" : [ "{'name': '测试用例1：传入实时时间，正确cookie值，能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count', 'data': {'t': None}}, 'header': None, 'assert': 'total'}" ]
       }, {
         "name" : "test_station_count[caseinfo1]",
-        "uid" : "b679906b4d06bfca",
+        "uid" : "b9e54b0b1cca44c5",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1659627557385,
-          "stop" : 1659627558495,
-          "duration" : 1110
+          "start" : 1659847418134,
+          "stop" : 1659847419175,
+          "duration" : 1041
         },
         "flaky" : false,
         "newFailed" : false,
@@ -41,13 +41,13 @@
         "parameters" : [ "{'name': '测试用例2：传入任意时间，正确cookie值能，获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count', 'data': {'t': 165454}}, 'header': None, 'assert': 'total'}" ]
       }, {
         "name" : "test_station_info[caseinfo0]",
-        "uid" : "b575e158af41ac6e",
+        "uid" : "db1685f41b1b2338",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1659627561777,
-          "stop" : 1659627564580,
-          "duration" : 2803
+          "start" : 1659847420218,
+          "stop" : 1659847421246,
+          "duration" : 1028
         },
         "flaky" : false,
         "newFailed" : false,
@@ -58,13 +58,13 @@
         "parameters" : [ "{'name': '测试用例1：传入实时时间，设备sn号，正确cookie值,正确的参数值mode,wifi,wan,enduser,status,state 能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/meshes/', 'station': '080052203000120', 'fields': 'mode,wifi,wan,enduser,status,state', 'data': {'t': None}}, 'header': None, 'assert': 'wan'}" ]
       }, {
         "name" : "test_station_info[caseinfo2]",
-        "uid" : "bc72f0962e9d277",
+        "uid" : "25f7cbaa1baf0c3b",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1659627567456,
-          "stop" : 1659627589623,
-          "duration" : 22167
+          "start" : 1659847422327,
+          "stop" : 1659847423362,
+          "duration" : 1035
         },
         "flaky" : false,
         "newFailed" : false,
@@ -75,13 +75,13 @@
         "parameters" : [ "{'name': '测试用例3：传入实时时间，设备sn号，正确cookie值,不传参数值state,不能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/meshes/', 'station': '080052203000111', 'fields': 'mode,wifi,wan,enduser,status', 'data': {'t': None}}, 'header': None, 'assert': 'status'}" ]
       }, {
         "name" : "test_station_info[caseinfo3]",
-        "uid" : "e2f43b34628e0a97",
+        "uid" : "142f7e2e3e5b207e",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1659627589639,
-          "stop" : 1659627593108,
-          "duration" : 3469
+          "start" : 1659847423378,
+          "stop" : 1659847427464,
+          "duration" : 4086
         },
         "flaky" : false,
         "newFailed" : false,
@@ -92,13 +92,13 @@
         "parameters" : [ "{'name': '测试用例4：传入设备sn号，正确的cookie，不传参数status 不能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/meshes/', 'station': '080052203000111', 'fields': 'mode,wifi,wan,enduser,state', 'data': {'t': None}}, 'header': None, 'assert': 'state'}" ]
       }, {
         "name" : "test_station_info[caseinfo4]",
-        "uid" : "94aedf8f02799e18",
+        "uid" : "3e5a306d526b1777",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1659627593124,
-          "stop" : 1659627594202,
-          "duration" : 1078
+          "start" : 1659847427476,
+          "stop" : 1659847428493,
+          "duration" : 1017
         },
         "flaky" : false,
         "newFailed" : false,
@@ -109,13 +109,13 @@
         "parameters" : [ "{'name': '测试用例5：不传入设备sn号，正确的参数值mode,wifi,wan,enduser,status,state 不能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/meshes', 'station': None, 'fields': 'mode,wifi,wan,enduser,status,state', 'data': {'t': None}}, 'header': None, 'assert': {'code': 100201}}" ]
       }, {
         "name" : "test_station_info[caseinfo0]",
-        "uid" : "aa65d3810ba0a39c",
+        "uid" : "77ded0d9daa0f767",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1659627594234,
-          "stop" : 1659627597343,
-          "duration" : 3109
+          "start" : 1659847428505,
+          "stop" : 1659847431557,
+          "duration" : 3052
         },
         "flaky" : false,
         "newFailed" : false,
