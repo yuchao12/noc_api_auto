@@ -4,8 +4,8 @@
     "uid" : "10d0d23cc70280f5ffd7a0b9d2baf9c6",
     "name" : "查询设备详细信息模块",
     "statistic" : {
-      "failed" : 3,
-      "broken" : 1,
+      "failed" : 4,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
@@ -15,8 +15,8 @@
     "uid" : "13bcc41e4a22c7b79becb07468ed3466",
     "name" : "设备数量统计模块",
     "statistic" : {
-      "failed" : 2,
-      "broken" : 0,
+      "failed" : 1,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,

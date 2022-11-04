@@ -1,0 +1,130 @@
+{
+  "uid" : "118f5e241b18d2ba",
+  "name" : "test_station_info[caseinfo1]",
+  "fullName" : "testcase.test_3_station_info.Test_station_info#test_station_info",
+  "historyId" : "b5b6a3d236af18af5d93840c6448ff0a",
+  "time" : {
+    "start" : 1667537727714,
+    "stop" : 1667537728803,
+    "duration" : 1089
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clean_yaml",
+    "time" : {
+      "start" : 1667537656217,
+      "stop" : 1667537656217,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "delet_log",
+    "time" : {
+      "start" : 1667537656218,
+      "stop" : 1667537656219,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1667537656219,
+      "stop" : 1667537657754,
+      "duration" : 1535
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a36481d3acd82fef",
+      "name" : "log",
+      "source" : "a36481d3acd82fef.txt",
+      "type" : "text/plain",
+      "size" : 1026
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "查询设备详细信息模块"
+  }, {
+    "name" : "tag",
+    "value" : "station_info"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_3_station_info"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_station_info"
+  }, {
+    "name" : "host",
+    "value" : "ycccccc"
+  }, {
+    "name" : "thread",
+    "value" : "4132-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_3_station_info"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '测试用例2：传入实时时间，设备sn号，错误cookie值,正确的参数值mode,wifi,wan,enduser,status,state 不能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/meshes/', 'station': '080052203000083', 'fields': 'mode,wifi,wan,enduser,status,state', 'data': {'t': None}}, 'header': 'dfsd5656fsd5634', 'assert': 'HTTP 401'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "station_info" ]
+  },
+  "source" : "118f5e241b18d2ba.json",
+  "parameterValues" : [ "{'name': '测试用例2：传入实时时间，设备sn号，错误cookie值,正确的参数值mode,wifi,wan,enduser,status,state 不能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/meshes/', 'station': '080052203000083', 'fields': 'mode,wifi,wan,enduser,status,state', 'data': {'t': None}}, 'header': 'dfsd5656fsd5634', 'assert': 'HTTP 401'}" ]
+}

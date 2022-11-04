@@ -1,1 +1,0 @@
-INFO     root:get_log.py:133 查询设备详细信息模块

@@ -1,0 +1,11 @@
+INFO     root:get_log.py:133 用户信息模块
+INFO     root:get_log.py:133 【开始执行测试用例：测试用例1:上传正确参数值，正确cookie值,能获取所有用户信息】
+INFO     root:get_log.py:133 请求url：https://noc-test.merckuwifi.com/api/endusers
+INFO     root:get_log.py:133 请求方法：get
+INFO     root:get_log.py:133 请求参数：{'offset': None, 'count': None, 't': '1667537735'}
+INFO     root:get_log.py:133 请求cookie值：{'cookie': '_cookie=L9JK4U#NgrpB7iW5bNqFuw3vZRG3p'}
+INFO     root:get_log.py:133 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+INFO     root:get_log.py:133 响应状态码：401
+ERROR    root:get_log.py:140 断言检查点：预期响应结果 total
+ERROR    root:get_log.py:140 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+ERROR    root:get_log.py:140 测试结果：实际结果不包含在预期结果内，测试用例失败
