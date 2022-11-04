@@ -1,0 +1,151 @@
+{
+  "uid" : "732b2267a36878c1",
+  "name" : "test_station_info[caseinfo1]",
+  "fullName" : "testcase.test_6_user_info.Test_station_info#test_station_info",
+  "historyId" : "04cde33a2590a3486beab5bcc962560c",
+  "time" : {
+    "start" : 1667535690731,
+    "stop" : 1667535693751,
+    "duration" : 3020
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clean_yaml",
+    "time" : {
+      "start" : 1667535682382,
+      "stop" : 1667535682383,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "delet_log",
+    "time" : {
+      "start" : 1667535682383,
+      "stop" : 1667535682384,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1667535682384,
+      "stop" : 1667535683984,
+      "duration" : 1600
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "get_userid",
+    "time" : {
+      "start" : 1667535683984,
+      "stop" : 1667535687614,
+      "duration" : 3630
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a5b64302c787754c",
+      "name" : "log",
+      "source" : "a5b64302c787754c.txt",
+      "type" : "text/plain",
+      "size" : 973
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "用户信息模块"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('get_userid')"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "tag",
+    "value" : "user_info"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_6_user_info"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_station_info"
+  }, {
+    "name" : "host",
+    "value" : "ycccccc"
+  }, {
+    "name" : "thread",
+    "value" : "8532-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_6_user_info"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '测试用例2:上传错误id，正确cookie值,不能能获取用户信息', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/endusers/', 'userid': 'ssdsd4545', 'data': {'t': None}}, 'header': None, 'assert': {'message': ['Id is invalid']}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "user_info", "run(order=1)", "@pytest.mark.usefixtures('get_userid')" ]
+  },
+  "source" : "732b2267a36878c1.json",
+  "parameterValues" : [ "{'name': '测试用例2:上传错误id，正确cookie值,不能能获取用户信息', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/endusers/', 'userid': 'ssdsd4545', 'data': {'t': None}}, 'header': None, 'assert': {'message': ['Id is invalid']}}" ]
+}

@@ -1,0 +1,18 @@
+2022-11-04 12:21:40 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 total
+2022-11-04 12:21:40 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-11-04 12:21:40 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-11-04 12:21:41 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 total
+2022-11-04 12:21:41 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-11-04 12:21:41 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-11-04 12:21:43 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 wan
+2022-11-04 12:21:43 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-11-04 12:21:43 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-11-04 12:22:25 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 state
+2022-11-04 12:22:25 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-11-04 12:22:25 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-11-04 12:22:26 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 {'code': 100201}
+2022-11-04 12:22:26 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-11-04 12:22:26 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-11-04 12:22:29 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 total
+2022-11-04 12:22:29 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-11-04 12:22:29 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败

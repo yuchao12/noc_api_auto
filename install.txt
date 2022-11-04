@@ -1,3 +1,4 @@
+pip install --user  pytest
 pytest
 pytest-html
 pytest-xdist
@@ -8,4 +9,3 @@ jsonpath
 colorlog
 pyyaml
 openpyxl
-pyyaml

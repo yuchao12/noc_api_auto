@@ -1,0 +1,212 @@
+2022-08-04 23:38:46 - get_log.py - [line:133] - INFO - [日志信息]: 没有日志文件，直接写入
+2022-08-04 23:38:48 - get_log.py - [line:133] - INFO - [日志信息]: cookie值提取成功
+2022-08-04 23:38:55 - get_log.py - [line:133] - INFO - [日志信息]: userid提取成功
+2022-08-04 23:38:57 - get_log.py - [line:133] - INFO - [日志信息]: 用户信息模块
+2022-08-04 23:39:00 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例1:上传正确id，正确cookie值,能获取用户信息】
+2022-08-04 23:39:00 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/endusers/UptMKUcjcD5aRGwUMeKZZt
+2022-08-04 23:39:00 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:00 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627537'}
+2022-08-04 23:39:00 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=91WXPW#NgrpB7iW5bNqFuw3vZRG3p'}
+2022-08-04 23:39:00 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'id': 'UptMKUcjcD5aRGwUMeKZZt', 'name': 'Junet', 'city': '', 'email': '', 'phone': '1-12345678901', 'state': 'active', 'external_id': '', 'description': '', 'sns': ['060052102001256', '060052112001664', '060052117000914'], 'meshes': []}
+2022-08-04 23:39:00 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：200
+2022-08-04 23:39:00 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'id': 'UptMKUcjcD5aRGwUMeKZZt'}
+2022-08-04 23:39:00 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'id': 'UptMKUcjcD5aRGwUMeKZZt', 'name': 'Junet', 'city': '', 'email': '', 'phone': '1-12345678901', 'state': 'active', 'external_id': '', 'description': '', 'sns': ['060052102001256', '060052112001664', '060052117000914'], 'meshes': []}
+2022-08-04 23:39:00 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-08-04 23:39:02 - get_log.py - [line:133] - INFO - [日志信息]: 用户信息模块
+2022-08-04 23:39:04 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例2:上传错误id，正确cookie值,不能能获取用户信息】
+2022-08-04 23:39:04 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/endusers/ssdsd4545
+2022-08-04 23:39:04 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:04 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627542'}
+2022-08-04 23:39:04 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=91WXPW#NgrpB7iW5bNqFuw3vZRG3p'}
+2022-08-04 23:39:04 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'error': {'code': 300202, 'message': ['Id is invalid']}}
+2022-08-04 23:39:04 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：400
+2022-08-04 23:39:04 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'message': ['Id is invalid']}
+2022-08-04 23:39:04 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'error': {'code': 300202, 'message': ['Id is invalid']}}
+2022-08-04 23:39:04 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-08-04 23:39:04 - get_log.py - [line:133] - INFO - [日志信息]: 接入设备详情模块
+2022-08-04 23:39:05 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例1:上传正确设备sn号，正确cookie值,能获取接入设备信息】
+2022-08-04 23:39:05 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/meshes/080052203000111/nodes
+2022-08-04 23:39:05 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:05 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627544'}
+2022-08-04 23:39:05 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=91WXPW#NgrpB7iW5bNqFuw3vZRG3p'}
+2022-08-04 23:39:05 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：[{'neighbors': [], 'is_gw': True, 'ip': '192.168.127.1', 'channel': {'5g': 40, '2.4g': 11, 'mesh': 40}, 'stations': [{'online_info': {'current_connected': True, 'realtime_speed': {'up': 0, 'down': 0}, 'traffic': {'ul': 12724768, 'dl': 820106}, 'band': '2.4g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 65000000, 'rssi': -61, 'online_duration': 1006876, 'channel': 11}, 'connected_network': None, 'mac': '381a521f85fb', 'name': 'EPSON1F85FB', 'ip': '192.168.127.145'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 0, 'down': 0}, 'traffic': {'ul': 6604095, 'dl': 11658580}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 866000000, 'rssi': -49, 'online_duration': 332248, 'channel': 40}, 'connected_network': None, 'mac': '2cd26bd381a9', 'name': 'android-c44878ff48ad2abf', 'ip': '192.168.127.158'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 10616, 'down': 1098136}, 'traffic': {'ul': 492936579, 'dl': 36723461846}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 866000000, 'rssi': -47, 'online_duration': 298166, 'channel': 40}, 'connected_network': None, 'mac': '90dd5da1fbe2', 'name': 'Living-Room', 'ip': '192.168.127.172'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 0, 'down': 0}, 'traffic': {'ul': 472442055, 'dl': 14738365639}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 866000000, 'rssi': -56, 'online_duration': 214909, 'channel': 40}, 'connected_network': None, 'mac': '949aa94180b7', 'name': 'XBOXONE', 'ip': '192.168.127.141'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 144, 'down': 256}, 'traffic': {'ul': 2411158414, 'dl': 21346531711}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 866000000, 'rssi': -29, 'online_duration': 233620, 'channel': 40}, 'connected_network': None, 'mac': '2a02b9e2626f', 'name': 'Unknown-Device', 'ip': '192.168.127.190'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 72, 'down': 104}, 'traffic': {'ul': 76084566, 'dl': 2173328615}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 1080000000, 'rssi': -46, 'online_duration': 79829, 'channel': 40}, 'connected_network': None, 'mac': '8af08adddc3e', 'name': 'Kathleen-s-Note20', 'ip': '192.168.127.151'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 0, 'down': 0}, 'traffic': {'ul': 75381, 'dl': 68809}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 173000000, 'rssi': -69, 'online_duration': 10180, 'channel': 40}, 'connected_network': None, 'mac': '5c0ce6ec0ab0', 'name': 'Nintendo-5C0CE6EC0AB0', 'ip': '192.168.127.148'}], 'city_id': '6075357', 'sn': '080052203000111', 'cpu': 3.0, 'mac': {'lan': 'f8272e0c4bc6', 'wan': 'f8272e0c4bc7', '2.4G': 'f8272e0c4bc8', '5G': 'f8272e0c4bcc', 'guest-5G': '663832373265', 'guest-2.4G': '663832373265'}, 'lan': {'ip': '192.168.127.1', 'mask': '255.255.255.0', 'gateway': '0.0.0.0', 'dns': ['0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0']}, 'memory': {'used': 99900000, 'total': 246440000}, 'version': '1.2.1', 'name': 'M6a-0111', 'offline_time': None, 'wan': {'ip': '38.69.162.38', 'mask': '255.255.255.224', 'gateway': '38.69.162.33', 'dns': ['168.245.130.16', '168.245.130.17']}, 'status': 'online', 'mesh_id': '080052203000111', 'uptime': 1006973, 'model': {'id': '08', 'name': 'M6a', 'description': 'M6a Wi-Fi Router', 'version': {'id': '0', 'name': 'M8R0'}}, 'latest_version': '1.2.1'}]
+2022-08-04 23:39:05 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：200
+2022-08-04 23:39:05 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'sn': '080052203000111'}
+2022-08-04 23:39:05 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 [{'neighbors': [], 'is_gw': True, 'ip': '192.168.127.1', 'channel': {'5g': 40, '2.4g': 11, 'mesh': 40}, 'stations': [{'online_info': {'current_connected': True, 'realtime_speed': {'up': 0, 'down': 0}, 'traffic': {'ul': 12724768, 'dl': 820106}, 'band': '2.4g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 65000000, 'rssi': -61, 'online_duration': 1006876, 'channel': 11}, 'connected_network': None, 'mac': '381a521f85fb', 'name': 'EPSON1F85FB', 'ip': '192.168.127.145'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 0, 'down': 0}, 'traffic': {'ul': 6604095, 'dl': 11658580}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 866000000, 'rssi': -49, 'online_duration': 332248, 'channel': 40}, 'connected_network': None, 'mac': '2cd26bd381a9', 'name': 'android-c44878ff48ad2abf', 'ip': '192.168.127.158'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 10616, 'down': 1098136}, 'traffic': {'ul': 492936579, 'dl': 36723461846}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 866000000, 'rssi': -47, 'online_duration': 298166, 'channel': 40}, 'connected_network': None, 'mac': '90dd5da1fbe2', 'name': 'Living-Room', 'ip': '192.168.127.172'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 0, 'down': 0}, 'traffic': {'ul': 472442055, 'dl': 14738365639}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 866000000, 'rssi': -56, 'online_duration': 214909, 'channel': 40}, 'connected_network': None, 'mac': '949aa94180b7', 'name': 'XBOXONE', 'ip': '192.168.127.141'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 144, 'down': 256}, 'traffic': {'ul': 2411158414, 'dl': 21346531711}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 866000000, 'rssi': -29, 'online_duration': 233620, 'channel': 40}, 'connected_network': None, 'mac': '2a02b9e2626f', 'name': 'Unknown-Device', 'ip': '192.168.127.190'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 72, 'down': 104}, 'traffic': {'ul': 76084566, 'dl': 2173328615}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 1080000000, 'rssi': -46, 'online_duration': 79829, 'channel': 40}, 'connected_network': None, 'mac': '8af08adddc3e', 'name': 'Kathleen-s-Note20', 'ip': '192.168.127.151'}, {'online_info': {'current_connected': True, 'realtime_speed': {'up': 0, 'down': 0}, 'traffic': {'ul': 75381, 'dl': 68809}, 'band': '5g', 'ssid': 'VictorRodrigues56', 'negotiation_rate': 173000000, 'rssi': -69, 'online_duration': 10180, 'channel': 40}, 'connected_network': None, 'mac': '5c0ce6ec0ab0', 'name': 'Nintendo-5C0CE6EC0AB0', 'ip': '192.168.127.148'}], 'city_id': '6075357', 'sn': '080052203000111', 'cpu': 3.0, 'mac': {'lan': 'f8272e0c4bc6', 'wan': 'f8272e0c4bc7', '2.4G': 'f8272e0c4bc8', '5G': 'f8272e0c4bcc', 'guest-5G': '663832373265', 'guest-2.4G': '663832373265'}, 'lan': {'ip': '192.168.127.1', 'mask': '255.255.255.0', 'gateway': '0.0.0.0', 'dns': ['0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0']}, 'memory': {'used': 99900000, 'total': 246440000}, 'version': '1.2.1', 'name': 'M6a-0111', 'offline_time': None, 'wan': {'ip': '38.69.162.38', 'mask': '255.255.255.224', 'gateway': '38.69.162.33', 'dns': ['168.245.130.16', '168.245.130.17']}, 'status': 'online', 'mesh_id': '080052203000111', 'uptime': 1006973, 'model': {'id': '08', 'name': 'M6a', 'description': 'M6a Wi-Fi Router', 'version': {'id': '0', 'name': 'M8R0'}}, 'latest_version': '1.2.1'}]
+2022-08-04 23:39:05 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-08-04 23:39:05 - get_log.py - [line:133] - INFO - [日志信息]: 接入设备详情模块
+2022-08-04 23:39:09 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例2:不传设备sn号，正确cookie值,不能获取接入设备信息】
+2022-08-04 23:39:09 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/meshes/nodes
+2022-08-04 23:39:09 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:09 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627545'}
+2022-08-04 23:39:09 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=91WXPW#NgrpB7iW5bNqFuw3vZRG3p'}
+2022-08-04 23:39:09 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'error': {'code': 300218, 'message': ['Mesh id invalid']}}
+2022-08-04 23:39:09 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：400
+2022-08-04 23:39:09 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'message': ['Mesh id invalid']}
+2022-08-04 23:39:09 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'error': {'code': 300218, 'message': ['Mesh id invalid']}}
+2022-08-04 23:39:09 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-08-04 23:39:09 - get_log.py - [line:133] - INFO - [日志信息]: 接入设备详情模块
+2022-08-04 23:39:12 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例3:上传正确设备sn号，错误cookie值,不能获取接入设备信息】
+2022-08-04 23:39:12 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/meshes/080052203000111/nodes
+2022-08-04 23:39:12 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:12 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627549'}
+2022-08-04 23:39:12 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=dfsdfds44454'}
+2022-08-04 23:39:12 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:12 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-08-04 23:39:12 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 Unauthorized
+2022-08-04 23:39:12 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:12 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-08-04 23:39:12 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例1：使用正确的用户名和密码能登录成功】
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': 'yuchao', 'password': 12345678}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：None
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'id': 'NgrpB7iW5bNqFuw3vZRG3p', 'username': 'yuchao', 'role': {'id': 'eq6bDnMTZmyPPQ6hsawghX', 'name': 'root', 'created_time': 1614051457000, 'permissions': ['alert.edit', 'alert.read', 'alert_report.edit', 'alert_report.read', 'alert_rule.edit', 'alert_rule.read', 'enduser.add', 'enduser.delete', 'enduser.edit', 'enduser.export', 'enduser.import', 'enduser.read', 'enduser.state.edit', 'mesh.batch', 'mesh.delete', 'mesh.detail.read', 'mesh.read', 'mesh.state.edit', 'mesh.task.add', 'role.add', 'role.delete', 'role.edit', 'role.read', 'syslog.read', 'user.add', 'user.delete', 'user.edit', 'user.freeze', 'user.read', 'user.unfreeze']}, 'freezed': False, 'created_time': 1627869194000, 'settings': {'timezone_offset': '-04:00'}}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：200
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'id': 'eq6bDnMTZmyPPQ6hsawghX'}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'id': 'NgrpB7iW5bNqFuw3vZRG3p', 'username': 'yuchao', 'role': {'id': 'eq6bDnMTZmyPPQ6hsawghX', 'name': 'root', 'created_time': 1614051457000, 'permissions': ['alert.edit', 'alert.read', 'alert_report.edit', 'alert_report.read', 'alert_rule.edit', 'alert_rule.read', 'enduser.add', 'enduser.delete', 'enduser.edit', 'enduser.export', 'enduser.import', 'enduser.read', 'enduser.state.edit', 'mesh.batch', 'mesh.delete', 'mesh.detail.read', 'mesh.read', 'mesh.state.edit', 'mesh.task.add', 'role.add', 'role.delete', 'role.edit', 'role.read', 'syslog.read', 'user.add', 'user.delete', 'user.edit', 'user.freeze', 'user.read', 'user.unfreeze']}, 'freezed': False, 'created_time': 1627869194000, 'settings': {'timezone_offset': '-04:00'}}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例2：使用错误的用户名不能登录成功】
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': 'yudsadc', 'password': 12345678}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：None
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'error': {'code': 200101, 'message': ['Incorrect username or password']}}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：400
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'message': ['Incorrect username or password']}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'error': {'code': 200101, 'message': ['Incorrect username or password']}}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例3：使用错误的密码不能登录成功】
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': 'yuchao', 'password': 12345678922}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：None
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'error': {'code': 200101, 'message': ['Incorrect username or password']}}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：400
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'message': ['Incorrect username or password']}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'error': {'code': 200101, 'message': ['Incorrect username or password']}}
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-08-04 23:39:15 - get_log.py - [line:133] - INFO - [日志信息]: 登录模块
+2022-08-04 23:39:16 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例4：不填写用户名和密码不能登录成功】
+2022-08-04 23:39:16 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/users/actions/login
+2022-08-04 23:39:16 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：post
+2022-08-04 23:39:16 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'username': None, 'password': None}
+2022-08-04 23:39:16 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：None
+2022-08-04 23:39:16 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'error': {'code': 100201, 'message': ["'username' is a required property"]}}
+2022-08-04 23:39:16 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：400
+2022-08-04 23:39:16 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 {'message': ["'username' is a required property"]}
+2022-08-04 23:39:16 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'error': {'code': 100201, 'message': ["'username' is a required property"]}}
+2022-08-04 23:39:16 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-08-04 23:39:16 - get_log.py - [line:133] - INFO - [日志信息]: 设备数量统计模块
+2022-08-04 23:39:17 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例1：传入实时时间，正确cookie值，能获取设备总数量】
+2022-08-04 23:39:17 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/statistics/routers/count
+2022-08-04 23:39:17 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:17 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627556'}
+2022-08-04 23:39:17 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=91WXPW#NgrpB7iW5bNqFuw3vZRG3p'}
+2022-08-04 23:39:17 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:17 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-08-04 23:39:17 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 total
+2022-08-04 23:39:17 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:17 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-08-04 23:39:17 - get_log.py - [line:133] - INFO - [日志信息]: 设备数量统计模块
+2022-08-04 23:39:18 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例2：传入任意时间，正确cookie值能，获取设备总数量】
+2022-08-04 23:39:18 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/statistics/routers/count
+2022-08-04 23:39:18 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:18 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': 165454}
+2022-08-04 23:39:18 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=91WXPW#NgrpB7iW5bNqFuw3vZRG3p'}
+2022-08-04 23:39:18 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:18 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-08-04 23:39:18 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 total
+2022-08-04 23:39:18 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:18 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-08-04 23:39:18 - get_log.py - [line:133] - INFO - [日志信息]: 设备数量统计模块
+2022-08-04 23:39:21 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例3：传入正确时间，错误cookie值，不能获取设备总数量】
+2022-08-04 23:39:21 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/statistics/routers/count
+2022-08-04 23:39:21 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:21 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627558'}
+2022-08-04 23:39:21 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=sdfsf454'}
+2022-08-04 23:39:21 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:21 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-08-04 23:39:21 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 HTTP 401: Unauthorized
+2022-08-04 23:39:21 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:21 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-08-04 23:39:21 - get_log.py - [line:133] - INFO - [日志信息]: 查询设备详细信息模块
+2022-08-04 23:39:24 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例1：传入实时时间，设备sn号，正确cookie值,正确的参数值mode,wifi,wan,enduser,status,state 能获取设备总数量】
+2022-08-04 23:39:24 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/meshes/080052203000120?fields=mode,wifi,wan,enduser,status,state
+2022-08-04 23:39:24 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:24 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627561'}
+2022-08-04 23:39:24 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=91WXPW#NgrpB7iW5bNqFuw3vZRG3p'}
+2022-08-04 23:39:24 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:24 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-08-04 23:39:24 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 wan
+2022-08-04 23:39:24 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:24 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-08-04 23:39:24 - get_log.py - [line:133] - INFO - [日志信息]: 查询设备详细信息模块
+2022-08-04 23:39:27 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例2：传入实时时间，设备sn号，错误cookie值,正确的参数值mode,wifi,wan,enduser,status,state 不能获取设备总数量】
+2022-08-04 23:39:27 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/meshes/080052203000083?fields=mode,wifi,wan,enduser,status,state
+2022-08-04 23:39:27 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:27 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627564'}
+2022-08-04 23:39:27 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=dfsd5656fsd5634'}
+2022-08-04 23:39:27 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:27 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-08-04 23:39:27 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 HTTP 401
+2022-08-04 23:39:27 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:27 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
+2022-08-04 23:39:27 - get_log.py - [line:133] - INFO - [日志信息]: 查询设备详细信息模块
+2022-08-04 23:39:49 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例3：传入实时时间，设备sn号，正确cookie值,不传参数值state,不能获取设备总数量】
+2022-08-04 23:39:49 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/meshes/080052203000111?fields=mode,wifi,wan,enduser,status
+2022-08-04 23:39:49 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:49 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627567'}
+2022-08-04 23:39:49 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=91WXPW#NgrpB7iW5bNqFuw3vZRG3p'}
+2022-08-04 23:39:49 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:49 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-08-04 23:39:49 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 status
+2022-08-04 23:39:49 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:49 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-08-04 23:39:49 - get_log.py - [line:133] - INFO - [日志信息]: 查询设备详细信息模块
+2022-08-04 23:39:53 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例4：传入设备sn号，正确的cookie，不传参数status 不能获取设备总数量】
+2022-08-04 23:39:53 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/meshes/080052203000111?fields=mode,wifi,wan,enduser,state
+2022-08-04 23:39:53 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:53 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627589'}
+2022-08-04 23:39:53 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=91WXPW#NgrpB7iW5bNqFuw3vZRG3p'}
+2022-08-04 23:39:53 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:53 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-08-04 23:39:53 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 state
+2022-08-04 23:39:53 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:53 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-08-04 23:39:53 - get_log.py - [line:133] - INFO - [日志信息]: 查询设备详细信息模块
+2022-08-04 23:39:54 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例5：不传入设备sn号，正确的参数值mode,wifi,wan,enduser,status,state 不能获取设备总数量】
+2022-08-04 23:39:54 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/meshes?fields=mode,wifi,wan,enduser,status,state
+2022-08-04 23:39:54 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:54 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'t': '1659627593'}
+2022-08-04 23:39:54 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=91WXPW#NgrpB7iW5bNqFuw3vZRG3p'}
+2022-08-04 23:39:54 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:54 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-08-04 23:39:54 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 {'code': 100201}
+2022-08-04 23:39:54 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:54 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-08-04 23:39:56 - get_log.py - [line:133] - INFO - [日志信息]: 用户信息模块
+2022-08-04 23:39:57 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例1:上传正确参数值，正确cookie值,能获取所有用户信息】
+2022-08-04 23:39:57 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/endusers
+2022-08-04 23:39:57 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:39:57 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'offset': None, 'count': None, 't': '1659627596'}
+2022-08-04 23:39:57 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=91WXPW#NgrpB7iW5bNqFuw3vZRG3p'}
+2022-08-04 23:39:57 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:57 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-08-04 23:39:57 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 total
+2022-08-04 23:39:57 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:39:57 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2022-08-04 23:39:59 - get_log.py - [line:133] - INFO - [日志信息]: 用户信息模块
+2022-08-04 23:40:00 - get_log.py - [line:133] - INFO - [日志信息]: 【开始执行测试用例：测试用例2:上传正确参数值，错误cookie值,不能能获取所有用户信息】
+2022-08-04 23:40:00 - get_log.py - [line:133] - INFO - [日志信息]: 请求url：https://noc-test.merckuwifi.com/api/endusers
+2022-08-04 23:40:00 - get_log.py - [line:133] - INFO - [日志信息]: 请求方法：get
+2022-08-04 23:40:00 - get_log.py - [line:133] - INFO - [日志信息]: 请求参数：{'offset': 0, 'count': 10, 't': '1659627599'}
+2022-08-04 23:40:00 - get_log.py - [line:133] - INFO - [日志信息]: 请求cookie值：{'cookie': '_cookie=dfsdfsd4545454'}
+2022-08-04 23:40:00 - get_log.py - [line:133] - INFO - [日志信息]: 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:40:00 - get_log.py - [line:133] - INFO - [日志信息]: 响应状态码：401
+2022-08-04 23:40:00 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：预期响应结果 Unauthorized
+2022-08-04 23:40:00 - get_log.py - [line:133] - INFO - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2022-08-04 23:40:00 - get_log.py - [line:133] - INFO - [日志信息]: 测试结果：预期结果包含在实际结果内，测试用例通过
