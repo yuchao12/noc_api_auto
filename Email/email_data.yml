@@ -1,8 +1,8 @@
-
+  #必须打开smtp 服务  生成授权码
 email_qq:
   host: smtp.qq.com
   user: 2373551676@qq.com
-  pass: xidhoahntzfpecbc
+  pass: oyvomwcxqkqsdjgb
   subject: noc项目接口自动化测试报告
   receivers:
     3207707507@qq.com,chao.yu@hyku.com,2373551676@qq.com,1475083550@qq.com

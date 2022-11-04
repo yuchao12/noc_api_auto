@@ -29,17 +29,17 @@ class send():
         zipf.close()
 
     def send_emial(self):
-        with open(r'D:\noc_api_auto\Email\email_data.yml', mode='r', encoding='utf-8') as f:
+        with open(r'E:\Project\noc_api_auto\Email\email_data.yml', mode='r', encoding='utf-8') as f:
             file_content = f.read()
             data = yaml.load(file_content, yaml.FullLoader)
-        filepath = r'D:\noc_api_auto\测试报告文件.zip'
+        filepath = r'E:\Project\noc_api_auto\测试报告文件.zip'
         smtp_server = data['email_qq']['host']#"smtp.qq.com"
         username = data['email_qq']['user']#"2373551676@qq.com"
         password = data['email_qq']['pass']#"lkqluoezcvtkeaci"
         sender = data['email_qq']['user']#'2373551676@qq.com'
         # 添加其他邮箱  用逗号分隔
         #receivers=data['email_qq']['receivers']  #
-        receivers = '3207707507@qq.com','2373551676@qq.com','1475083550@qq.com'#,'chao.yu@hyku.com'
+        receivers = '3207707507@qq.com','2373551676@qq.com'
         time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         msg = MIMEMultipart()
         # 邮件正文

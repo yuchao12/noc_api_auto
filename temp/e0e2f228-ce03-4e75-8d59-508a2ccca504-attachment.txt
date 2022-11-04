@@ -1,0 +1,11 @@
+INFO     root:get_log.py:133 用户信息模块
+INFO     root:get_log.py:133 【开始执行测试用例：测试用例2:上传错误id，正确cookie值,不能能获取用户信息】
+INFO     root:get_log.py:133 请求url：https://noc-test.merckuwifi.com/api/endusers/ssdsd4545
+INFO     root:get_log.py:133 请求方法：get
+INFO     root:get_log.py:133 请求参数：{'t': '1667538808'}
+INFO     root:get_log.py:133 请求cookie值：{'cookie': '_cookie=HVMAAW#NgrpB7iW5bNqFuw3vZRG3p'}
+INFO     root:get_log.py:133 响应结果：{'error': {'code': 300202, 'message': ['Id is invalid']}}
+INFO     root:get_log.py:133 响应状态码：400
+INFO     root:get_log.py:133 断言检查点：预期响应结果 {'message': ['Id is invalid']}
+INFO     root:get_log.py:133 断言检查点：实际结果响应结果 {'error': {'code': 300202, 'message': ['Id is invalid']}}
+INFO     root:get_log.py:133 测试结果：预期结果包含在实际结果内，测试用例通过

@@ -2,19 +2,19 @@
     "reportName": " NOC 接口自动化测试报告",
     "testRuns": [],
     "statistic": {
-        "failed": 6,
-        "broken": 1,
+        "failed": 7,
+        "broken": 0,
         "skipped": 0,
         "passed": 12,
         "unknown": 0,
         "total": 19
     },
     "time": {
-        "start": 1667537661406,
-        "stop": 1667537739925,
-        "duration": 78519,
-        "minDuration": 296,
-        "maxDuration": 49494,
-        "sumDuration": 78338
+        "start": 1667538803463,
+        "stop": 1667538836462,
+        "duration": 32999,
+        "minDuration": 278,
+        "maxDuration": 5061,
+        "sumDuration": 32920
     }
 }

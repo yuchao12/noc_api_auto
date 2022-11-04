@@ -1,0 +1,11 @@
+INFO     root:get_log.py:133 接入设备详情模块
+INFO     root:get_log.py:133 【开始执行测试用例：测试用例2:不传设备sn号，正确cookie值,不能获取接入设备信息】
+INFO     root:get_log.py:133 请求url：https://noc-test.merckuwifi.com/api/meshes/nodes
+INFO     root:get_log.py:133 请求方法：get
+INFO     root:get_log.py:133 请求参数：{'t': '1667538811'}
+INFO     root:get_log.py:133 请求cookie值：{'cookie': '_cookie=HVMAAW#NgrpB7iW5bNqFuw3vZRG3p'}
+INFO     root:get_log.py:133 响应结果：{'error': {'code': 300218, 'message': ['Mesh id invalid']}}
+INFO     root:get_log.py:133 响应状态码：400
+INFO     root:get_log.py:133 断言检查点：预期响应结果 {'message': ['Mesh id invalid']}
+INFO     root:get_log.py:133 断言检查点：实际结果响应结果 {'error': {'code': 300218, 'message': ['Mesh id invalid']}}
+INFO     root:get_log.py:133 测试结果：预期结果包含在实际结果内，测试用例通过
