@@ -1,0 +1,21 @@
+2023-01-07 12:37:17 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 total
+2023-01-07 12:37:17 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2023-01-07 12:37:17 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2023-01-07 12:37:18 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 total
+2023-01-07 12:37:18 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2023-01-07 12:37:18 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2023-01-07 12:37:20 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 wan
+2023-01-07 12:37:20 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2023-01-07 12:37:20 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2023-01-07 12:37:22 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 status
+2023-01-07 12:37:22 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2023-01-07 12:37:22 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2023-01-07 12:37:23 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 state
+2023-01-07 12:37:23 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2023-01-07 12:37:23 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2023-01-07 12:37:24 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 {'code': 100201}
+2023-01-07 12:37:24 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2023-01-07 12:37:24 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2023-01-07 12:37:27 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 total
+2023-01-07 12:37:27 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2023-01-07 12:37:27 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
