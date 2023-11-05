@@ -1,0 +1,11 @@
+INFO     root:get_log.py:133 查询设备详细信息模块
+INFO     root:get_log.py:133 【开始执行测试用例：测试用例5：不传入设备sn号，正确的参数值mode,wifi,wan,enduser,status,state 不能获取设备总数量】
+INFO     root:get_log.py:133 请求url：https://noc-test.merckuwifi.com/api/meshes?fields=mode,wifi,wan,enduser,status,state
+INFO     root:get_log.py:133 请求方法：get
+INFO     root:get_log.py:133 请求参数：{'t': '1699172937'}
+INFO     root:get_log.py:133 请求cookie值：{'cookie': '_cookie=BI4015#NgrpB7iW5bNqFuw3vZRG3p'}
+INFO     root:get_log.py:133 响应结果：{'detail': 'HTTP 401: Unauthorized'}
+INFO     root:get_log.py:133 响应状态码：401
+ERROR    root:get_log.py:140 断言检查点：预期响应结果 {'code': 100201}
+ERROR    root:get_log.py:140 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+ERROR    root:get_log.py:140 测试结果：实际结果不包含在预期结果内，测试用例失败
