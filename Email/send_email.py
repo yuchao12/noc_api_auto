@@ -29,10 +29,10 @@ class send():
         zipf.close()
 
     def send_emial(self):
-        with open(r'E:\Project\noc_api_auto\Email\email_data.yml', mode='r', encoding='utf-8') as f:
+        with open(r'C:\Project\noc_api_auto\Email\email_data.yml', mode='r', encoding='utf-8') as f:
             file_content = f.read()
             data = yaml.load(file_content, yaml.FullLoader)
-        filepath = r'E:\Project\noc_api_auto\测试报告文件.zip'
+        filepath = r'C:\Project\noc_api_auto\测试报告文件.zip'
         smtp_server = data['email_qq']['host']#"smtp.qq.com"
         username = data['email_qq']['user']#"2373551676@qq.com"
         password = data['email_qq']['pass']#"lkqluoezcvtkeaci"

@@ -15,8 +15,8 @@
     "uid" : "13bcc41e4a22c7b79becb07468ed3466",
     "name" : "设备数量统计模块",
     "statistic" : {
-      "failed" : 2,
-      "broken" : 0,
+      "failed" : 1,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
