@@ -2,60 +2,18 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "requests.exceptions.JSONDecodeError: [Errno Expecting value] <html>\r\n<head><title>400 Bad Request</title></head>\r\n<body>\r\n<center><h1>400 Bad Request</h1></center>\r\n</body>\r\n</html>\r\n: 0",
-      "children" : [ {
-        "name" : "test_station_count[caseinfo0]",
-        "uid" : "19d1e9bd97c90bff",
-        "parentUid" : "06f4ef1819efe6ddb1c48c5f9f02f87a",
-        "status" : "broken",
-        "time" : {
-          "start" : 1699170096804,
-          "stop" : 1699170096807,
-          "duration" : 3
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'name': '测试用例1：传入实时时间，正确cookie值，能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count', 'data': {'t': None}}, 'header': None, 'assert': 'total'}" ]
-      } ],
-      "uid" : "06f4ef1819efe6ddb1c48c5f9f02f87a"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
     "name" : "Product defects",
     "children" : [ {
       "name" : "AssertionError",
       "children" : [ {
-        "name" : "test_station_count[caseinfo1]",
-        "uid" : "3cf21976113036ac",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
-        "time" : {
-          "start" : 1699170096850,
-          "stop" : 1699170098075,
-          "duration" : 1225
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'name': '测试用例2：传入任意时间，正确cookie值能，获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/statistics/routers/count', 'data': {'t': 165454}}, 'header': None, 'assert': 'total'}" ]
-      }, {
         "name" : "test_station_info[caseinfo0]",
-        "uid" : "9107b9e770c2eb3c",
+        "uid" : "325411aebd7bae8",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1699170099325,
-          "stop" : 1699170100523,
-          "duration" : 1198
+          "start" : 1699172692126,
+          "stop" : 1699172693255,
+          "duration" : 1129
         },
         "flaky" : false,
         "newFailed" : false,
@@ -66,13 +24,13 @@
         "parameters" : [ "{'name': '测试用例1：传入实时时间，设备sn号，正确cookie值,正确的参数值mode,wifi,wan,enduser,status,state 能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/meshes/', 'station': '080052203000120', 'fields': 'mode,wifi,wan,enduser,status,state', 'data': {'t': None}}, 'header': None, 'assert': 'wan'}" ]
       }, {
         "name" : "test_station_info[caseinfo2]",
-        "uid" : "d025edb5d59dcb01",
+        "uid" : "722972327457873c",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1699170101784,
-          "stop" : 1699170103011,
-          "duration" : 1227
+          "start" : 1699172694417,
+          "stop" : 1699172695560,
+          "duration" : 1143
         },
         "flaky" : false,
         "newFailed" : false,
@@ -83,13 +41,13 @@
         "parameters" : [ "{'name': '测试用例3：传入实时时间，设备sn号，正确cookie值,不传参数值state,不能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/meshes/', 'station': '080052203000111', 'fields': 'mode,wifi,wan,enduser,status', 'data': {'t': None}}, 'header': None, 'assert': 'status'}" ]
       }, {
         "name" : "test_station_info[caseinfo3]",
-        "uid" : "3e33a50d3df54f52",
+        "uid" : "44d07481483652ab",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1699170103017,
-          "stop" : 1699170104162,
-          "duration" : 1145
+          "start" : 1699172695566,
+          "stop" : 1699172696695,
+          "duration" : 1129
         },
         "flaky" : false,
         "newFailed" : false,
@@ -100,13 +58,13 @@
         "parameters" : [ "{'name': '测试用例4：传入设备sn号，正确的cookie，不传参数status 不能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/meshes/', 'station': '080052203000111', 'fields': 'mode,wifi,wan,enduser,state', 'data': {'t': None}}, 'header': None, 'assert': 'state'}" ]
       }, {
         "name" : "test_station_info[caseinfo4]",
-        "uid" : "38dd81afff9f2c0b",
+        "uid" : "d41e9f1e70e0b3e3",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1699170104167,
-          "stop" : 1699170105320,
-          "duration" : 1153
+          "start" : 1699172696700,
+          "stop" : 1699172697855,
+          "duration" : 1155
         },
         "flaky" : false,
         "newFailed" : false,
@@ -115,23 +73,6 @@
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'name': '测试用例5：不传入设备sn号，正确的参数值mode,wifi,wan,enduser,status,state 不能获取设备总数量', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/meshes', 'station': None, 'fields': 'mode,wifi,wan,enduser,status,state', 'data': {'t': None}}, 'header': None, 'assert': {'code': 100201}}" ]
-      }, {
-        "name" : "test_station_info[caseinfo0]",
-        "uid" : "cff792935f6fbb49",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
-        "time" : {
-          "start" : 1699170105325,
-          "stop" : 1699170108771,
-          "duration" : 3446
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'name': '测试用例1:上传正确参数值，正确cookie值,能获取所有用户信息', 'request': {'method': 'get', 'url': 'https://noc-test.merckuwifi.com/api/endusers', 'data': {'offset': None, 'count': None, 't': None}}, 'header': None, 'assert': 'total'}" ]
       } ],
       "uid" : "a0017ad855102fea08b8682d27fec4ca"
     } ],

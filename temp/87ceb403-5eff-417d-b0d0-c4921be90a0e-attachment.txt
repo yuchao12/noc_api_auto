@@ -1,1 +1,0 @@
-INFO     root:get_log.py:133 设备数量统计模块
