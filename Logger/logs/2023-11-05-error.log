@@ -1,12 +1,9 @@
-2023-11-05 16:28:53 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 wan
-2023-11-05 16:28:53 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
-2023-11-05 16:28:53 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
-2023-11-05 16:28:56 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 status
-2023-11-05 16:28:56 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
-2023-11-05 16:28:56 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
-2023-11-05 16:28:57 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 state
-2023-11-05 16:28:57 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
-2023-11-05 16:28:57 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
-2023-11-05 16:28:58 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 {'code': 100201}
-2023-11-05 16:28:58 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
-2023-11-05 16:28:58 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2023-11-05 16:30:36 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 status
+2023-11-05 16:30:36 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2023-11-05 16:30:36 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2023-11-05 16:30:37 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 state
+2023-11-05 16:30:37 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2023-11-05 16:30:37 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
+2023-11-05 16:30:38 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：预期响应结果 {'code': 100201}
+2023-11-05 16:30:38 - get_log.py - [line:140] - ERROR - [日志信息]: 断言检查点：实际结果响应结果 {'detail': 'HTTP 401: Unauthorized'}
+2023-11-05 16:30:38 - get_log.py - [line:140] - ERROR - [日志信息]: 测试结果：实际结果不包含在预期结果内，测试用例失败
